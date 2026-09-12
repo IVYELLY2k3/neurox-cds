@@ -1,0 +1,10 @@
+# Render Blueprint — deploys the whole app (site + API) as one free web service.
+# The prebuilt frontend lives in backend/static (rebuild with build-site.sh).
+services:
+  - type: web
+    name: neurox-cds
+    runtime: python
+    rootDir: backend
+    buildCommand: pip install -r requirements.txt
+    startCommand: uvicorn main:app --host 0.0.0.0 --port $PORT
+    plan: free

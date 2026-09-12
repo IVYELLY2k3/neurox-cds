@@ -1,0 +1,16 @@
+[
+  {
+    "id": "DOC-001",
+    "name": "Dr. Demo Physician",
+    "email": "doctor@neurox.com",
+    "password": "neurox123",
+    "specialization": "General Medicine"
+  },
+  {
+    "id": "DOC-002",
+    "name": "Dr. NeuroX",
+    "email": "neurox@neurox.com",
+    "password": "neurox456",
+    "specialization": "Neurology"
+  }
+]

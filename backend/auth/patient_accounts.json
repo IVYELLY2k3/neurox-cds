@@ -1,0 +1,32 @@
+[
+  {
+    "patientId": "PAT-001",
+    "name": "Arjun Mehta",
+    "email": "parent.mehta@email.com",
+    "password": "patient123"
+  },
+  {
+    "patientId": "PAT-002",
+    "name": "Priya Sharma",
+    "email": "priya.sharma@email.com",
+    "password": "patient123"
+  },
+  {
+    "patientId": "PAT-003",
+    "name": "Rahul Verma",
+    "email": "rahul.verma@email.com",
+    "password": "patient123"
+  },
+  {
+    "patientId": "PAT-004",
+    "name": "Ananya Gupta",
+    "email": "ananya.gupta@email.com",
+    "password": "patient123"
+  },
+  {
+    "patientId": "PAT-005",
+    "name": "Vikram Singh",
+    "email": "vikram.singh@email.com",
+    "password": "patient123"
+  }
+]

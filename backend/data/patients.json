@@ -1,0 +1,1411 @@
+[
+  {
+    "id": "PAT-001",
+    "resourceType": "Patient",
+    "mrn": "MRN-2024-0847",
+    "name": {
+      "given": "Arjun",
+      "family": "Mehta",
+      "full": "Arjun Mehta"
+    },
+    "gender": "male",
+    "dateOfBirth": "2018-03-15",
+    "age": 8,
+    "weight": 25.0,
+    "height": 127,
+    "bloodType": "B+",
+    "contact": {
+      "phone": "+91-98765-43210",
+      "email": "parent.mehta@email.com",
+      "emergencyContact": {
+        "name": "Sunita Mehta",
+        "relation": "Mother",
+        "phone": "+91-98765-43211"
+      }
+    },
+    "allergies": [
+      {
+        "id": "ALG-001",
+        "substance": "Penicillin",
+        "drugClass": "Penicillins",
+        "reaction": "Anaphylaxis",
+        "severity": "severe",
+        "status": "active",
+        "documentedDate": "2022-06-10",
+        "documentedBy": "Dr. Kavita Rao",
+        "notes": "Severe anaphylactic reaction within 15 minutes of oral Amoxicillin administration. Required epinephrine and emergency department admission. Cross-reactivity with all Penicillin-class antibiotics confirmed."
+      },
+      {
+        "id": "ALG-002",
+        "substance": "Peanuts",
+        "drugClass": null,
+        "reaction": "Urticaria, Angioedema",
+        "severity": "moderate",
+        "status": "active",
+        "documentedDate": "2021-01-20",
+        "documentedBy": "Dr. Suresh Iyer",
+        "notes": "Hives and facial swelling after peanut exposure."
+      }
+    ],
+    "currentMedications": [
+      {
+        "id": "MED-001",
+        "drug": "Phenytoin",
+        "genericName": "Phenytoin",
+        "brandName": "Eptoin",
+        "drugClass": "Anticonvulsants",
+        "dose": "50 mg",
+        "frequency": "twice daily",
+        "route": "oral",
+        "startDate": "2023-09-01",
+        "prescribedBy": "Dr. Neha Kapoor",
+        "indication": "Epilepsy - partial seizures",
+        "status": "active"
+      },
+      {
+        "id": "MED-002",
+        "drug": "Theophylline",
+        "genericName": "Theophylline",
+        "brandName": "Theo-24",
+        "drugClass": "Bronchodilators",
+        "dose": "75 mg",
+        "frequency": "twice daily",
+        "route": "oral",
+        "startDate": "2024-01-15",
+        "prescribedBy": "Dr. Amit Shah",
+        "indication": "Bronchial asthma",
+        "status": "active"
+      }
+    ],
+    "diagnoses": [
+      {
+        "id": "DX-001",
+        "code": "G40.209",
+        "description": "Epilepsy - Partial seizures",
+        "status": "active",
+        "diagnosedDate": "2023-08-20",
+        "diagnosedBy": "Dr. Neha Kapoor"
+      },
+      {
+        "id": "DX-002",
+        "code": "J45.20",
+        "description": "Bronchial Asthma - Mild persistent",
+        "status": "active",
+        "diagnosedDate": "2023-12-10",
+        "diagnosedBy": "Dr. Amit Shah"
+      }
+    ],
+    "visitHistory": [
+      {
+        "id": "VIS-001",
+        "date": "2024-08-15",
+        "facility": "City Children's Hospital",
+        "doctor": "Dr. Neha Kapoor",
+        "department": "Pediatric Neurology",
+        "reason": "Seizure follow-up",
+        "notes": "Well-controlled on current Phenytoin dose. EEG stable. Continue current regimen.",
+        "vitals": {
+          "weight": 25.0,
+          "height": 127,
+          "temp": 36.8,
+          "bp": "95/60",
+          "hr": 88
+        }
+      },
+      {
+        "id": "VIS-002",
+        "date": "2024-06-20",
+        "facility": "City Children's Hospital",
+        "doctor": "Dr. Amit Shah",
+        "department": "Pediatric Pulmonology",
+        "reason": "Asthma review",
+        "notes": "Mild wheezing on examination. Theophylline levels within therapeutic range. Continue current dosing.",
+        "vitals": {
+          "weight": 24.5,
+          "height": 126,
+          "temp": 37.0,
+          "bp": "92/58",
+          "hr": 92
+        }
+      },
+      {
+        "id": "VIS-003",
+        "date": "2022-06-10",
+        "facility": "Emergency Department - General Hospital",
+        "doctor": "Dr. Kavita Rao",
+        "department": "Emergency Medicine",
+        "reason": "Anaphylactic reaction",
+        "notes": "Brought in with severe anaphylaxis after Amoxicillin dose for ear infection. Treated with IM epinephrine, IV methylprednisolone, and IV diphenhydramine. Monitored for 24 hours. Documented Penicillin allergy - all classes.",
+        "vitals": {
+          "weight": 21.0,
+          "height": 118,
+          "temp": 37.2,
+          "bp": "80/50",
+          "hr": 130
+        }
+      }
+    ],
+    "labResults": [
+      {
+        "id": "LAB-001",
+        "test": "Phenytoin Level",
+        "result": "12.5 mcg/mL",
+        "referenceRange": "10-20 mcg/mL",
+        "status": "normal",
+        "date": "2024-08-15",
+        "orderedBy": "Dr. Neha Kapoor"
+      },
+      {
+        "id": "LAB-002",
+        "test": "Complete Blood Count",
+        "result": "WBC 7.2, Hb 12.1, Plt 245",
+        "referenceRange": "WBC 5-13, Hb 11.5-15.5, Plt 150-400",
+        "status": "normal",
+        "date": "2024-08-15",
+        "orderedBy": "Dr. Neha Kapoor"
+      },
+      {
+        "id": "LAB-003",
+        "test": "Theophylline Level",
+        "result": "8.5 mcg/mL",
+        "referenceRange": "5-15 mcg/mL",
+        "status": "normal",
+        "date": "2024-06-20",
+        "orderedBy": "Dr. Amit Shah"
+      }
+    ],
+    "procedures": [
+      {
+        "id": "PROC-001",
+        "name": "EEG - Electroencephalogram",
+        "date": "2024-08-15",
+        "facility": "City Children's Hospital",
+        "result": "No epileptiform discharges. Normal background activity.",
+        "performedBy": "Dr. Neha Kapoor"
+      }
+    ],
+    "clinicalNotes": [
+      {
+        "id": "NOTE-001",
+        "date": "2024-08-15",
+        "author": "Dr. Neha Kapoor",
+        "note": "8-year-old male with well-controlled epilepsy on Phenytoin 50mg BID. No breakthrough seizures in past 6 months. Drug levels therapeutic. Plan: continue current regimen, follow-up in 3 months."
+      },
+      {
+        "id": "NOTE-002",
+        "date": "2022-06-10",
+        "author": "Dr. Kavita Rao",
+        "note": "CRITICAL ALLERGY DOCUMENTATION: Patient experienced Grade 3 anaphylaxis to Amoxicillin (Penicillin class). This is a LIFE-THREATENING allergy. ALL Penicillin-class antibiotics are CONTRAINDICATED. Use alternatives such as Azithromycin or Fluoroquinolones for bacterial infections. Alert added to medical record."
+      }
+    ]
+  },
+  {
+    "id": "PAT-002",
+    "resourceType": "Patient",
+    "mrn": "MRN-2024-1293",
+    "name": {
+      "given": "Priya",
+      "family": "Sharma",
+      "full": "Priya Sharma"
+    },
+    "gender": "female",
+    "dateOfBirth": "1954-07-22",
+    "age": 72,
+    "weight": 58.0,
+    "height": 155,
+    "bloodType": "A+",
+    "contact": {
+      "phone": "+91-87654-32109",
+      "email": "priya.sharma@email.com",
+      "emergencyContact": {
+        "name": "Rajesh Sharma",
+        "relation": "Son",
+        "phone": "+91-87654-32110"
+      }
+    },
+    "allergies": [
+      {
+        "id": "ALG-003",
+        "substance": "Sulfonamides",
+        "drugClass": "Sulfonamides",
+        "reaction": "Stevens-Johnson Syndrome",
+        "severity": "severe",
+        "status": "active",
+        "documentedDate": "2015-03-18",
+        "documentedBy": "Dr. Meena Joshi",
+        "notes": "Developed SJS after Sulfamethoxazole/Trimethoprim. Required ICU admission. Absolute contraindication to all sulfonamide antibiotics."
+      }
+    ],
+    "currentMedications": [
+      {
+        "id": "MED-003",
+        "drug": "Warfarin",
+        "genericName": "Warfarin",
+        "brandName": "Coumadin",
+        "drugClass": "Anticoagulants",
+        "dose": "5 mg",
+        "frequency": "once daily",
+        "route": "oral",
+        "startDate": "2022-04-10",
+        "prescribedBy": "Dr. Rajan Patel",
+        "indication": "Atrial fibrillation - stroke prevention",
+        "status": "active"
+      },
+      {
+        "id": "MED-004",
+        "drug": "Metformin",
+        "genericName": "Metformin",
+        "brandName": "Glucophage",
+        "drugClass": "Biguanides",
+        "dose": "500 mg",
+        "frequency": "twice daily",
+        "route": "oral",
+        "startDate": "2019-11-05",
+        "prescribedBy": "Dr. Anita Desai",
+        "indication": "Type 2 Diabetes Mellitus",
+        "status": "active"
+      },
+      {
+        "id": "MED-005",
+        "drug": "Lisinopril",
+        "genericName": "Lisinopril",
+        "brandName": "Zestril",
+        "drugClass": "ACE Inhibitors",
+        "dose": "10 mg",
+        "frequency": "once daily",
+        "route": "oral",
+        "startDate": "2020-03-15",
+        "prescribedBy": "Dr. Rajan Patel",
+        "indication": "Hypertension",
+        "status": "active"
+      },
+      {
+        "id": "MED-006",
+        "drug": "Atorvastatin",
+        "genericName": "Atorvastatin",
+        "brandName": "Lipitor",
+        "drugClass": "Statins",
+        "dose": "20 mg",
+        "frequency": "once daily at bedtime",
+        "route": "oral",
+        "startDate": "2020-03-15",
+        "prescribedBy": "Dr. Rajan Patel",
+        "indication": "Dyslipidemia",
+        "status": "active"
+      }
+    ],
+    "diagnoses": [
+      {
+        "id": "DX-003",
+        "code": "I48.91",
+        "description": "Atrial Fibrillation",
+        "status": "active",
+        "diagnosedDate": "2022-03-20",
+        "diagnosedBy": "Dr. Rajan Patel"
+      },
+      {
+        "id": "DX-004",
+        "code": "E11.9",
+        "description": "Type 2 Diabetes Mellitus",
+        "status": "active",
+        "diagnosedDate": "2019-10-15",
+        "diagnosedBy": "Dr. Anita Desai"
+      },
+      {
+        "id": "DX-005",
+        "code": "I10",
+        "description": "Essential Hypertension",
+        "status": "active",
+        "diagnosedDate": "2018-06-01",
+        "diagnosedBy": "Dr. Rajan Patel"
+      },
+      {
+        "id": "DX-006",
+        "code": "N18.3",
+        "description": "Chronic Kidney Disease - Stage 3",
+        "status": "active",
+        "diagnosedDate": "2023-01-12",
+        "diagnosedBy": "Dr. Meena Joshi"
+      },
+      {
+        "id": "DX-007",
+        "code": "E78.5",
+        "description": "Dyslipidemia",
+        "status": "active",
+        "diagnosedDate": "2020-02-10",
+        "diagnosedBy": "Dr. Rajan Patel"
+      }
+    ],
+    "visitHistory": [
+      {
+        "id": "VIS-004",
+        "date": "2024-09-01",
+        "facility": "Metro General Hospital",
+        "doctor": "Dr. Rajan Patel",
+        "department": "Cardiology",
+        "reason": "INR check and AF follow-up",
+        "notes": "INR 2.4, within therapeutic range. AF rate-controlled. Continue Warfarin 5mg daily.",
+        "vitals": {
+          "weight": 58.0,
+          "height": 155,
+          "temp": 36.6,
+          "bp": "138/82",
+          "hr": 76
+        }
+      },
+      {
+        "id": "VIS-005",
+        "date": "2024-07-15",
+        "facility": "Metro General Hospital",
+        "doctor": "Dr. Meena Joshi",
+        "department": "Nephrology",
+        "reason": "CKD monitoring",
+        "notes": "eGFR 42 mL/min. Stable CKD Stage 3. Avoid nephrotoxic drugs. Monitor Metformin carefully.",
+        "vitals": {
+          "weight": 57.5,
+          "height": 155,
+          "temp": 36.7,
+          "bp": "142/85",
+          "hr": 72
+        }
+      }
+    ],
+    "labResults": [
+      {
+        "id": "LAB-004",
+        "test": "INR",
+        "result": "2.4",
+        "referenceRange": "2.0-3.0 (therapeutic on Warfarin)",
+        "status": "normal",
+        "date": "2024-09-01",
+        "orderedBy": "Dr. Rajan Patel"
+      },
+      {
+        "id": "LAB-005",
+        "test": "Serum Creatinine",
+        "result": "1.8 mg/dL",
+        "referenceRange": "0.6-1.2 mg/dL",
+        "status": "high",
+        "date": "2024-07-15",
+        "orderedBy": "Dr. Meena Joshi"
+      },
+      {
+        "id": "LAB-006",
+        "test": "eGFR",
+        "result": "42 mL/min/1.73m\u00b2",
+        "referenceRange": ">60 mL/min/1.73m\u00b2",
+        "status": "low",
+        "date": "2024-07-15",
+        "orderedBy": "Dr. Meena Joshi"
+      },
+      {
+        "id": "LAB-007",
+        "test": "HbA1c",
+        "result": "7.2%",
+        "referenceRange": "<7.0%",
+        "status": "high",
+        "date": "2024-07-15",
+        "orderedBy": "Dr. Anita Desai"
+      }
+    ],
+    "procedures": [],
+    "clinicalNotes": [
+      {
+        "id": "NOTE-003",
+        "date": "2024-09-01",
+        "author": "Dr. Rajan Patel",
+        "note": "72F with AF on Warfarin, HTN, T2DM, CKD3. Stable. INR therapeutic. Caution with any new medications re: Warfarin interactions and renal dosing adjustments."
+      }
+    ]
+  },
+  {
+    "id": "PAT-003",
+    "resourceType": "Patient",
+    "mrn": "MRN-2024-0562",
+    "name": {
+      "given": "Rahul",
+      "family": "Verma",
+      "full": "Rahul Verma"
+    },
+    "gender": "male",
+    "dateOfBirth": "1981-11-08",
+    "age": 45,
+    "weight": 82.0,
+    "height": 175,
+    "bloodType": "O+",
+    "contact": {
+      "phone": "+91-76543-21098",
+      "email": "rahul.verma@email.com",
+      "emergencyContact": {
+        "name": "Meera Verma",
+        "relation": "Wife",
+        "phone": "+91-76543-21099"
+      }
+    },
+    "allergies": [
+      {
+        "id": "ALG-004",
+        "substance": "Aspirin",
+        "drugClass": "NSAIDs",
+        "reaction": "Bronchospasm",
+        "severity": "moderate",
+        "status": "active",
+        "documentedDate": "2020-05-10",
+        "documentedBy": "Dr. Vivek Kumar",
+        "notes": "Developed acute bronchospasm after Aspirin 325mg. Avoid all NSAIDs due to cross-reactivity risk."
+      }
+    ],
+    "currentMedications": [
+      {
+        "id": "MED-007",
+        "drug": "Metformin",
+        "genericName": "Metformin",
+        "brandName": "Glucophage",
+        "drugClass": "Biguanides",
+        "dose": "1000 mg",
+        "frequency": "twice daily",
+        "route": "oral",
+        "startDate": "2021-03-10",
+        "prescribedBy": "Dr. Anita Desai",
+        "indication": "Type 2 Diabetes Mellitus",
+        "status": "active"
+      },
+      {
+        "id": "MED-008",
+        "drug": "Amlodipine",
+        "genericName": "Amlodipine",
+        "brandName": "Norvasc",
+        "drugClass": "Calcium Channel Blockers",
+        "dose": "5 mg",
+        "frequency": "once daily",
+        "route": "oral",
+        "startDate": "2022-01-20",
+        "prescribedBy": "Dr. Vivek Kumar",
+        "indication": "Hypertension",
+        "status": "active"
+      },
+      {
+        "id": "MED-009",
+        "drug": "Rosuvastatin",
+        "genericName": "Rosuvastatin",
+        "brandName": "Crestor",
+        "drugClass": "Statins",
+        "dose": "10 mg",
+        "frequency": "once daily at bedtime",
+        "route": "oral",
+        "startDate": "2021-06-15",
+        "prescribedBy": "Dr. Vivek Kumar",
+        "indication": "Dyslipidemia",
+        "status": "active"
+      }
+    ],
+    "diagnoses": [
+      {
+        "id": "DX-008",
+        "code": "E11.9",
+        "description": "Type 2 Diabetes Mellitus",
+        "status": "active",
+        "diagnosedDate": "2021-02-28",
+        "diagnosedBy": "Dr. Anita Desai"
+      },
+      {
+        "id": "DX-009",
+        "code": "I10",
+        "description": "Essential Hypertension",
+        "status": "active",
+        "diagnosedDate": "2021-12-15",
+        "diagnosedBy": "Dr. Vivek Kumar"
+      },
+      {
+        "id": "DX-010",
+        "code": "E78.5",
+        "description": "Dyslipidemia",
+        "status": "active",
+        "diagnosedDate": "2021-05-20",
+        "diagnosedBy": "Dr. Vivek Kumar"
+      }
+    ],
+    "visitHistory": [
+      {
+        "id": "VIS-006",
+        "date": "2024-08-20",
+        "facility": "Apollo Clinic",
+        "doctor": "Dr. Vivek Kumar",
+        "department": "Internal Medicine",
+        "reason": "Routine check-up",
+        "notes": "BP well controlled on Amlodipine. Diabetes control fair. Advised dietary modification and exercise.",
+        "vitals": {
+          "weight": 82.0,
+          "height": 175,
+          "temp": 36.5,
+          "bp": "128/78",
+          "hr": 74
+        }
+      }
+    ],
+    "labResults": [
+      {
+        "id": "LAB-008",
+        "test": "HbA1c",
+        "result": "7.5%",
+        "referenceRange": "<7.0%",
+        "status": "high",
+        "date": "2024-08-20",
+        "orderedBy": "Dr. Vivek Kumar"
+      },
+      {
+        "id": "LAB-009",
+        "test": "Fasting Blood Glucose",
+        "result": "145 mg/dL",
+        "referenceRange": "70-100 mg/dL",
+        "status": "high",
+        "date": "2024-08-20",
+        "orderedBy": "Dr. Vivek Kumar"
+      },
+      {
+        "id": "LAB-010",
+        "test": "Lipid Panel",
+        "result": "TC 195, LDL 118, HDL 42, TG 175",
+        "referenceRange": "TC<200, LDL<100, HDL>40, TG<150",
+        "status": "borderline",
+        "date": "2024-08-20",
+        "orderedBy": "Dr. Vivek Kumar"
+      }
+    ],
+    "procedures": [],
+    "clinicalNotes": [
+      {
+        "id": "NOTE-004",
+        "date": "2024-08-20",
+        "author": "Dr. Vivek Kumar",
+        "note": "45M with T2DM, HTN, Dyslipidemia. Aspirin-sensitive (bronchospasm). All conditions stable. HbA1c slightly above target - reinforce lifestyle measures before escalating therapy."
+      }
+    ]
+  },
+  {
+    "id": "PAT-004",
+    "resourceType": "Patient",
+    "mrn": "MRN-2024-0934",
+    "name": {
+      "given": "Ananya",
+      "family": "Gupta",
+      "full": "Ananya Gupta"
+    },
+    "gender": "female",
+    "dateOfBirth": "1994-02-14",
+    "age": 32,
+    "weight": 65.0,
+    "height": 163,
+    "bloodType": "AB+",
+    "contact": {
+      "phone": "+91-65432-10987",
+      "email": "ananya.gupta@email.com",
+      "emergencyContact": {
+        "name": "Rohit Gupta",
+        "relation": "Husband",
+        "phone": "+91-65432-10988"
+      }
+    },
+    "allergies": [
+      {
+        "id": "ALG-005",
+        "substance": "Ibuprofen",
+        "drugClass": "NSAIDs",
+        "reaction": "Gastrointestinal bleeding",
+        "severity": "severe",
+        "status": "active",
+        "documentedDate": "2023-04-20",
+        "documentedBy": "Dr. Sanjay Reddy",
+        "notes": "Hospitalized for upper GI bleeding after 3 days of Ibuprofen use. Endoscopy confirmed gastric ulcer. Avoid all NSAIDs."
+      }
+    ],
+    "currentMedications": [
+      {
+        "id": "MED-010",
+        "drug": "Prenatal Multivitamin",
+        "genericName": "Prenatal Vitamins",
+        "brandName": "Prenavit",
+        "drugClass": "Vitamins",
+        "dose": "1 tablet",
+        "frequency": "once daily",
+        "route": "oral",
+        "startDate": "2024-06-01",
+        "prescribedBy": "Dr. Lakshmi Nair",
+        "indication": "Prenatal supplementation",
+        "status": "active"
+      },
+      {
+        "id": "MED-011",
+        "drug": "Folic Acid",
+        "genericName": "Folic Acid",
+        "brandName": "Folvite",
+        "drugClass": "Vitamins",
+        "dose": "5 mg",
+        "frequency": "once daily",
+        "route": "oral",
+        "startDate": "2024-05-15",
+        "prescribedBy": "Dr. Lakshmi Nair",
+        "indication": "Neural tube defect prevention",
+        "status": "active"
+      },
+      {
+        "id": "MED-012",
+        "drug": "Pantoprazole",
+        "genericName": "Pantoprazole",
+        "brandName": "Pantocid",
+        "drugClass": "Proton Pump Inhibitors",
+        "dose": "40 mg",
+        "frequency": "once daily before breakfast",
+        "route": "oral",
+        "startDate": "2023-05-01",
+        "prescribedBy": "Dr. Sanjay Reddy",
+        "indication": "GERD prevention post-GI bleed",
+        "status": "active"
+      }
+    ],
+    "diagnoses": [
+      {
+        "id": "DX-011",
+        "code": "Z33.1",
+        "description": "Pregnancy - 16 weeks gestation",
+        "status": "active",
+        "diagnosedDate": "2024-05-15",
+        "diagnosedBy": "Dr. Lakshmi Nair"
+      },
+      {
+        "id": "DX-012",
+        "code": "K21.0",
+        "description": "Gastroesophageal Reflux Disease (GERD)",
+        "status": "active",
+        "diagnosedDate": "2023-04-25",
+        "diagnosedBy": "Dr. Sanjay Reddy"
+      }
+    ],
+    "visitHistory": [
+      {
+        "id": "VIS-007",
+        "date": "2024-08-10",
+        "facility": "Women's Wellness Hospital",
+        "doctor": "Dr. Lakshmi Nair",
+        "department": "Obstetrics",
+        "reason": "Prenatal check-up - 16 weeks",
+        "notes": "Normal pregnancy progression. Anatomy scan scheduled. Fetal heartbeat 150 bpm. Mild GERD symptoms managed with Pantoprazole.",
+        "vitals": {
+          "weight": 65.0,
+          "height": 163,
+          "temp": 36.7,
+          "bp": "110/70",
+          "hr": 80
+        }
+      }
+    ],
+    "labResults": [
+      {
+        "id": "LAB-011",
+        "test": "Complete Blood Count",
+        "result": "WBC 8.5, Hb 11.2, Plt 220",
+        "referenceRange": "WBC 4-11, Hb 11-14 (pregnancy), Plt 150-400",
+        "status": "normal",
+        "date": "2024-08-10",
+        "orderedBy": "Dr. Lakshmi Nair"
+      },
+      {
+        "id": "LAB-012",
+        "test": "Blood Glucose (Random)",
+        "result": "98 mg/dL",
+        "referenceRange": "<140 mg/dL",
+        "status": "normal",
+        "date": "2024-08-10",
+        "orderedBy": "Dr. Lakshmi Nair"
+      }
+    ],
+    "procedures": [],
+    "clinicalNotes": [
+      {
+        "id": "NOTE-005",
+        "date": "2024-08-10",
+        "author": "Dr. Lakshmi Nair",
+        "note": "32F, G1P0, 16 weeks pregnant. History of GI bleed with NSAIDs - ABSOLUTELY AVOID NSAIDs during pregnancy. On Pantoprazole for GERD. Prenatal care on track. Category X drugs contraindicated."
+      }
+    ]
+  },
+  {
+    "id": "PAT-005",
+    "resourceType": "Patient",
+    "mrn": "MRN-2024-1178",
+    "name": {
+      "given": "Vikram",
+      "family": "Singh",
+      "full": "Vikram Singh"
+    },
+    "gender": "male",
+    "dateOfBirth": "1971-09-30",
+    "age": 55,
+    "weight": 90.0,
+    "height": 178,
+    "bloodType": "O-",
+    "contact": {
+      "phone": "+91-54321-09876",
+      "email": "vikram.singh@email.com",
+      "emergencyContact": {
+        "name": "Deepika Singh",
+        "relation": "Wife",
+        "phone": "+91-54321-09877"
+      }
+    },
+    "allergies": [
+      {
+        "id": "ALG-006",
+        "substance": "Codeine",
+        "drugClass": "Opioids",
+        "reaction": "Severe nausea, vomiting, respiratory depression",
+        "severity": "severe",
+        "status": "active",
+        "documentedDate": "2019-08-15",
+        "documentedBy": "Dr. Pradeep Malhotra",
+        "notes": "Severe respiratory depression after post-surgical Codeine. Possible CYP2D6 ultra-rapid metabolizer. Avoid all Codeine-containing products."
+      }
+    ],
+    "currentMedications": [
+      {
+        "id": "MED-013",
+        "drug": "Atorvastatin",
+        "genericName": "Atorvastatin",
+        "brandName": "Lipitor",
+        "drugClass": "Statins",
+        "dose": "40 mg",
+        "frequency": "once daily at bedtime",
+        "route": "oral",
+        "startDate": "2020-06-01",
+        "prescribedBy": "Dr. Pradeep Malhotra",
+        "indication": "Dyslipidemia",
+        "status": "active"
+      },
+      {
+        "id": "MED-014",
+        "drug": "Metoprolol",
+        "genericName": "Metoprolol Succinate",
+        "brandName": "Seloken XL",
+        "drugClass": "Beta-Blockers",
+        "dose": "50 mg",
+        "frequency": "once daily",
+        "route": "oral",
+        "startDate": "2021-02-15",
+        "prescribedBy": "Dr. Pradeep Malhotra",
+        "indication": "Hypertension",
+        "status": "active"
+      },
+      {
+        "id": "MED-015",
+        "drug": "Ursodeoxycholic Acid",
+        "genericName": "Ursodiol",
+        "brandName": "Udiliv",
+        "drugClass": "Bile Acid Agents",
+        "dose": "300 mg",
+        "frequency": "twice daily",
+        "route": "oral",
+        "startDate": "2023-08-01",
+        "prescribedBy": "Dr. Harish Menon",
+        "indication": "Non-alcoholic fatty liver disease",
+        "status": "active"
+      }
+    ],
+    "diagnoses": [
+      {
+        "id": "DX-013",
+        "code": "K76.0",
+        "description": "Non-Alcoholic Fatty Liver Disease (NAFLD)",
+        "status": "active",
+        "diagnosedDate": "2023-07-15",
+        "diagnosedBy": "Dr. Harish Menon"
+      },
+      {
+        "id": "DX-014",
+        "code": "I10",
+        "description": "Essential Hypertension",
+        "status": "active",
+        "diagnosedDate": "2020-12-01",
+        "diagnosedBy": "Dr. Pradeep Malhotra"
+      },
+      {
+        "id": "DX-015",
+        "code": "E78.5",
+        "description": "Dyslipidemia",
+        "status": "active",
+        "diagnosedDate": "2020-05-10",
+        "diagnosedBy": "Dr. Pradeep Malhotra"
+      },
+      {
+        "id": "DX-016",
+        "code": "E66.01",
+        "description": "Obesity - BMI 28.4",
+        "status": "active",
+        "diagnosedDate": "2020-05-10",
+        "diagnosedBy": "Dr. Pradeep Malhotra"
+      }
+    ],
+    "visitHistory": [
+      {
+        "id": "VIS-008",
+        "date": "2024-07-25",
+        "facility": "Liver Care Institute",
+        "doctor": "Dr. Harish Menon",
+        "department": "Hepatology",
+        "reason": "NAFLD follow-up",
+        "notes": "Liver enzymes trending down on Ursodiol. Mild hepatomegaly on ultrasound. Continue current management. Avoid hepatotoxic drugs. Caution with Atorvastatin - monitor LFTs.",
+        "vitals": {
+          "weight": 90.0,
+          "height": 178,
+          "temp": 36.6,
+          "bp": "130/82",
+          "hr": 70
+        }
+      }
+    ],
+    "labResults": [
+      {
+        "id": "LAB-013",
+        "test": "ALT (SGPT)",
+        "result": "52 U/L",
+        "referenceRange": "7-56 U/L",
+        "status": "borderline",
+        "date": "2024-07-25",
+        "orderedBy": "Dr. Harish Menon"
+      },
+      {
+        "id": "LAB-014",
+        "test": "AST (SGOT)",
+        "result": "48 U/L",
+        "referenceRange": "10-40 U/L",
+        "status": "high",
+        "date": "2024-07-25",
+        "orderedBy": "Dr. Harish Menon"
+      },
+      {
+        "id": "LAB-015",
+        "test": "Lipid Panel",
+        "result": "TC 210, LDL 130, HDL 38, TG 210",
+        "referenceRange": "TC<200, LDL<100, HDL>40, TG<150",
+        "status": "high",
+        "date": "2024-07-25",
+        "orderedBy": "Dr. Pradeep Malhotra"
+      }
+    ],
+    "procedures": [
+      {
+        "id": "PROC-002",
+        "name": "Abdominal Ultrasound",
+        "date": "2024-07-25",
+        "facility": "Liver Care Institute",
+        "result": "Mild hepatomegaly. Increased liver echogenicity consistent with NAFLD. No focal lesions.",
+        "performedBy": "Dr. Harish Menon"
+      }
+    ],
+    "clinicalNotes": [
+      {
+        "id": "NOTE-006",
+        "date": "2024-07-25",
+        "author": "Dr. Harish Menon",
+        "note": "55M with NAFLD, HTN, Dyslipidemia, Obesity. Liver function borderline elevated but improving. Codeine allergy documented (severe respiratory depression). AVOID hepatotoxic medications - Acetaminophen use with extreme caution, max 2g/day. Monitor LFTs every 3 months while on Atorvastatin."
+      }
+    ]
+  },
+  {
+    "name": {
+      "given": "Alan",
+      "family": "Renny",
+      "full": "Alan Renny"
+    },
+    "gender": "male",
+    "age": 20,
+    "weight": 75,
+    "height": 170,
+    "bloodType": "A+",
+    "contact": {
+      "phone": "",
+      "email": "",
+      "emergencyContact": {
+        "name": "",
+        "relation": "",
+        "phone": ""
+      }
+    },
+    "id": "P-34B12E",
+    "mrn": "MRN-2026-F8E8",
+    "allergies": [],
+    "currentMedications": [],
+    "diagnoses": [],
+    "visitHistory": [],
+    "labResults": [],
+    "procedures": [],
+    "clinicalNotes": []
+  },
+  {
+    "name": {
+      "full": "Test"
+    },
+    "gender": "male",
+    "age": 20,
+    "weight": 70,
+    "bloodType": "Unknown",
+    "id": "P-4CD5E0",
+    "mrn": "MRN-2026-2C0D",
+    "allergies": [],
+    "currentMedications": [],
+    "diagnoses": [],
+    "visitHistory": [],
+    "labResults": [],
+    "procedures": [],
+    "clinicalNotes": []
+  },
+  {
+    "name": {
+      "given": "adsa",
+      "family": "sfasf",
+      "full": "adsa sfasf"
+    },
+    "gender": "male",
+    "age": 13,
+    "weight": 67,
+    "height": 170,
+    "bloodType": "O+",
+    "contact": {
+      "phone": "",
+      "email": "",
+      "emergencyContact": {
+        "name": "",
+        "relation": "",
+        "phone": ""
+      }
+    },
+    "id": "P-445EF7",
+    "mrn": "MRN-2026-34E2",
+    "allergies": [],
+    "currentMedications": [],
+    "diagnoses": [],
+    "visitHistory": [],
+    "labResults": [],
+    "procedures": [],
+    "clinicalNotes": []
+  },
+  {
+    "name": {
+      "given": "Test",
+      "family": "Patient",
+      "full": "Test Patient"
+    },
+    "gender": "male",
+    "age": 35,
+    "weight": 70,
+    "height": 170,
+    "bloodType": "O+",
+    "contact": {
+      "phone": "",
+      "email": "",
+      "emergencyContact": {
+        "name": "",
+        "relation": "",
+        "phone": ""
+      }
+    },
+    "id": "P-64C7F0",
+    "mrn": "MRN-2026-85BA",
+    "allergies": [],
+    "currentMedications": [],
+    "diagnoses": [],
+    "visitHistory": [],
+    "labResults": [],
+    "procedures": [],
+    "clinicalNotes": []
+  },
+  {
+    "name": {
+      "given": "zxvxv ",
+      "family": "cxbfx",
+      "full": "zxvxv  cxbfx"
+    },
+    "gender": "male",
+    "age": 19,
+    "weight": 78,
+    "height": 170,
+    "bloodType": "O+",
+    "contact": {
+      "phone": "",
+      "email": "",
+      "emergencyContact": {
+        "name": "",
+        "relation": "",
+        "phone": ""
+      }
+    },
+    "id": "P-39E7A4",
+    "mrn": "MRN-2026-0BE5",
+    "allergies": [],
+    "currentMedications": [],
+    "diagnoses": [],
+    "visitHistory": [],
+    "labResults": [],
+    "procedures": [],
+    "clinicalNotes": []
+  },
+  {
+    "name": {
+      "given": "ascas",
+      "family": "sadcas",
+      "full": "ascas sadcas"
+    },
+    "gender": "male",
+    "age": 19,
+    "weight": 78,
+    "height": 170,
+    "bloodType": "O+",
+    "contact": {
+      "phone": "",
+      "email": "",
+      "emergencyContact": {
+        "name": "",
+        "relation": "",
+        "phone": ""
+      }
+    },
+    "id": "P-E8522E",
+    "mrn": "MRN-2026-B093",
+    "allergies": [],
+    "currentMedications": [],
+    "diagnoses": [],
+    "visitHistory": [],
+    "labResults": [],
+    "procedures": [],
+    "clinicalNotes": []
+  },
+  {
+    "name": {
+      "given": "Alan ",
+      "family": "Renny",
+      "full": "Alan  Renny"
+    },
+    "gender": "male",
+    "age": 19,
+    "weight": 69,
+    "height": 170,
+    "bloodType": "O+",
+    "contact": {
+      "phone": "",
+      "email": "",
+      "emergencyContact": {
+        "name": "",
+        "relation": "",
+        "phone": ""
+      }
+    },
+    "id": "P-CDB057",
+    "mrn": "MRN-2026-EF9C",
+    "allergies": [],
+    "currentMedications": [],
+    "diagnoses": [],
+    "visitHistory": [],
+    "labResults": [],
+    "procedures": [],
+    "clinicalNotes": []
+  },
+  {
+    "name": {
+      "given": "ASD",
+      "family": "Dad",
+      "full": "ASD Dad"
+    },
+    "gender": "male",
+    "age": 123,
+    "weight": 13,
+    "height": 170,
+    "bloodType": "O+",
+    "contact": {
+      "phone": "",
+      "email": "",
+      "emergencyContact": {
+        "name": "",
+        "relation": "",
+        "phone": ""
+      }
+    },
+    "id": "P-647FC5",
+    "mrn": "MRN-2026-F407",
+    "allergies": [],
+    "currentMedications": [],
+    "diagnoses": [],
+    "visitHistory": [],
+    "labResults": [],
+    "procedures": [],
+    "clinicalNotes": []
+  },
+  {
+    "name": {
+      "given": "alan",
+      "family": "renny",
+      "full": "alan renny"
+    },
+    "gender": "male",
+    "age": 18,
+    "weight": 75,
+    "height": 170,
+    "bloodType": "O+",
+    "contact": {
+      "phone": "",
+      "email": "",
+      "emergencyContact": {
+        "name": "",
+        "relation": "",
+        "phone": ""
+      }
+    },
+    "id": "P-715DA5",
+    "mrn": "MRN-2026-AC0D",
+    "allergies": [],
+    "currentMedications": [],
+    "diagnoses": [],
+    "visitHistory": [],
+    "labResults": [],
+    "procedures": [],
+    "clinicalNotes": []
+  },
+  {
+    "name": {
+      "given": "arun",
+      "family": "p",
+      "full": "arun p"
+    },
+    "gender": "male",
+    "age": 26,
+    "weight": 81,
+    "height": 170,
+    "bloodType": "O+",
+    "contact": {
+      "phone": "",
+      "email": "",
+      "emergencyContact": {
+        "name": "",
+        "relation": "",
+        "phone": ""
+      }
+    },
+    "id": "P-6E0DD0",
+    "mrn": "MRN-2026-5C50",
+    "allergies": [],
+    "currentMedications": [],
+    "diagnoses": [],
+    "visitHistory": [],
+    "labResults": [],
+    "procedures": [],
+    "clinicalNotes": []
+  },
+  {
+    "name": {
+      "given": "TEST",
+      "family": "allergy",
+      "full": "TEST allergy"
+    },
+    "gender": "male",
+    "age": 30,
+    "weight": 70,
+    "height": 170,
+    "bloodType": "O+",
+    "contact": {
+      "phone": "",
+      "email": "",
+      "emergencyContact": {
+        "name": "",
+        "relation": "",
+        "phone": ""
+      }
+    },
+    "allergies": [
+      {
+        "id": "ALG-1789148714223",
+        "substance": "Amoxicillin",
+        "drugClass": null,
+        "reaction": "Anaphylaxis",
+        "severity": "severe",
+        "status": "active",
+        "documentedDate": "2026-09-11",
+        "documentedBy": "Dr. Demo Physician",
+        "notes": ""
+      }
+    ],
+    "id": "P-C1D293",
+    "mrn": "MRN-2026-F68E",
+    "currentMedications": [],
+    "diagnoses": [],
+    "visitHistory": [],
+    "labResults": [],
+    "procedures": [],
+    "clinicalNotes": []
+  },
+  {
+    "name": {
+      "given": "Test",
+      "family": "5",
+      "full": "Test 5"
+    },
+    "gender": "male",
+    "age": 28,
+    "weight": 70,
+    "height": 170,
+    "bloodType": "O+",
+    "contact": {
+      "phone": "",
+      "email": "",
+      "emergencyContact": {
+        "name": "",
+        "relation": "",
+        "phone": ""
+      }
+    },
+    "allergies": [
+      {
+        "id": "ALG-1789178621706",
+        "substance": "penicillin",
+        "drugClass": null,
+        "reaction": "anaphylaxis",
+        "severity": "severe",
+        "status": "active",
+        "documentedDate": "2026-09-12",
+        "documentedBy": "Dr. Demo Physician",
+        "notes": ""
+      }
+    ],
+    "id": "P-6BFDE2",
+    "mrn": "MRN-2026-CC43",
+    "currentMedications": [],
+    "diagnoses": [],
+    "visitHistory": [],
+    "labResults": [],
+    "procedures": [],
+    "clinicalNotes": []
+  },
+  {
+    "name": {
+      "given": "test",
+      "family": "all",
+      "full": "test all"
+    },
+    "gender": "male",
+    "age": 28,
+    "weight": 70,
+    "height": 170,
+    "bloodType": "O+",
+    "contact": {
+      "phone": "",
+      "email": "",
+      "emergencyContact": {
+        "name": "",
+        "relation": "",
+        "phone": ""
+      }
+    },
+    "allergies": [
+      {
+        "id": "ALG-1789178808133",
+        "substance": "amoxycillin",
+        "drugClass": null,
+        "reaction": "Anaphylaxis",
+        "severity": "severe",
+        "status": "active",
+        "documentedDate": "2026-09-12",
+        "documentedBy": "Dr. Demo Physician",
+        "notes": ""
+      }
+    ],
+    "id": "P-9A62FD",
+    "mrn": "MRN-2026-B978",
+    "currentMedications": [],
+    "diagnoses": [],
+    "visitHistory": [],
+    "labResults": [],
+    "procedures": [],
+    "clinicalNotes": []
+  },
+  {
+    "name": {
+      "given": "test",
+      "family": "test",
+      "full": "test test"
+    },
+    "gender": "male",
+    "age": 20,
+    "weight": 70,
+    "height": 170,
+    "bloodType": "O+",
+    "contact": {
+      "phone": "",
+      "email": "",
+      "emergencyContact": {
+        "name": "",
+        "relation": "",
+        "phone": ""
+      }
+    },
+    "allergies": [
+      {
+        "id": "ALG-1789178939565",
+        "substance": "amoxicilliin",
+        "drugClass": null,
+        "reaction": "anaphylaxis",
+        "severity": "severe",
+        "status": "active",
+        "documentedDate": "2026-09-12",
+        "documentedBy": "Dr. Demo Physician",
+        "notes": ""
+      }
+    ],
+    "id": "P-508825",
+    "mrn": "MRN-2026-26B7",
+    "currentMedications": [],
+    "diagnoses": [],
+    "visitHistory": [],
+    "labResults": [],
+    "procedures": [],
+    "clinicalNotes": []
+  },
+  {
+    "name": {
+      "given": "alan",
+      "family": "renny",
+      "full": "alan renny"
+    },
+    "gender": "male",
+    "age": 15,
+    "weight": 54,
+    "height": 170,
+    "bloodType": "O+",
+    "contact": {
+      "phone": "",
+      "email": "",
+      "emergencyContact": {
+        "name": "",
+        "relation": "",
+        "phone": ""
+      }
+    },
+    "allergies": [
+      {
+        "id": "ALG-1789195966362",
+        "substance": "pencillin",
+        "drugClass": null,
+        "reaction": "rash",
+        "severity": "severe",
+        "status": "active",
+        "documentedDate": "2026-09-12",
+        "documentedBy": "Dr. Demo Physician",
+        "notes": ""
+      }
+    ],
+    "id": "P-073C85",
+    "mrn": "MRN-2026-3ED1",
+    "currentMedications": [],
+    "diagnoses": [],
+    "visitHistory": [],
+    "labResults": [],
+    "procedures": [],
+    "clinicalNotes": []
+  }
+]

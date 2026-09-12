@@ -1,0 +1,722 @@
+[
+  {
+    "id": "DRUG-001", "genericName": "Amoxicillin", "brandNames": ["Amoxil", "Moxatag", "Novamox"],
+    "drugClass": "Penicillins", "therapeuticCategory": "Antibiotic",
+    "forms": ["tablet", "capsule", "suspension"],
+    "dosageRanges": {
+      "pediatric": { "mgPerKgPerDay": { "min": 25, "max": 50 }, "maxDailyDose": 1500, "frequency": "every 8 hours", "notes": "Divide into 3 doses" },
+      "adult": { "dosePerAdmin": { "min": 250, "max": 500 }, "maxDailyDose": 3000, "frequency": "every 8 hours" },
+      "geriatric": { "dosePerAdmin": { "min": 250, "max": 500 }, "maxDailyDose": 2000, "frequency": "every 8 hours", "notes": "Adjust for renal function" }
+    },
+    "contraindications": ["Penicillin allergy", "Mononucleosis"],
+    "pregnancyCategory": "B"
+  },
+  {
+    "id": "DRUG-002", "genericName": "Paracetamol", "brandNames": ["Tylenol", "Calpol", "Dolo"],
+    "drugClass": "Analgesics", "therapeuticCategory": "Pain Relief / Antipyretic",
+    "forms": ["tablet", "syrup", "suppository", "injection"],
+    "dosageRanges": {
+      "pediatric": { "mgPerKgPerDay": { "min": 40, "max": 60 }, "maxDailyDose": 2000, "frequency": "every 4-6 hours", "notes": "Divide into 4-6 doses. Max 5 doses/day." },
+      "adult": { "dosePerAdmin": { "min": 325, "max": 1000 }, "maxDailyDose": 4000, "frequency": "every 4-6 hours" },
+      "geriatric": { "dosePerAdmin": { "min": 325, "max": 650 }, "maxDailyDose": 3000, "frequency": "every 6 hours", "notes": "Reduce in hepatic impairment" }
+    },
+    "contraindications": ["Severe hepatic impairment", "Active liver disease"],
+    "pregnancyCategory": "B"
+  },
+  {
+    "id": "DRUG-003", "genericName": "Ibuprofen", "brandNames": ["Advil", "Brufen", "Motrin"],
+    "drugClass": "NSAIDs", "therapeuticCategory": "Anti-inflammatory / Analgesic",
+    "forms": ["tablet", "suspension", "gel"],
+    "dosageRanges": {
+      "pediatric": { "mgPerKgPerDay": { "min": 20, "max": 40 }, "maxDailyDose": 1200, "frequency": "every 6-8 hours", "notes": "Use only in children >6 months" },
+      "adult": { "dosePerAdmin": { "min": 200, "max": 400 }, "maxDailyDose": 2400, "frequency": "every 4-6 hours" },
+      "geriatric": { "dosePerAdmin": { "min": 200, "max": 400 }, "maxDailyDose": 1200, "frequency": "every 6-8 hours", "notes": "Use lowest effective dose" }
+    },
+    "contraindications": ["GI bleeding", "Severe renal impairment", "Third trimester pregnancy", "NSAID allergy"],
+    "pregnancyCategory": "D"
+  },
+  {
+    "id": "DRUG-004", "genericName": "Azithromycin", "brandNames": ["Zithromax", "Azithral", "Azee"],
+    "drugClass": "Macrolides", "therapeuticCategory": "Antibiotic",
+    "forms": ["tablet", "suspension", "injection"],
+    "dosageRanges": {
+      "pediatric": { "mgPerKgPerDay": { "min": 5, "max": 12 }, "maxDailyDose": 500, "frequency": "once daily", "notes": "Usually 10mg/kg Day 1, then 5mg/kg Days 2-5" },
+      "adult": { "dosePerAdmin": { "min": 250, "max": 500 }, "maxDailyDose": 500, "frequency": "once daily" },
+      "geriatric": { "dosePerAdmin": { "min": 250, "max": 500 }, "maxDailyDose": 500, "frequency": "once daily" }
+    },
+    "contraindications": ["Macrolide allergy", "Hepatic impairment", "QT prolongation"],
+    "pregnancyCategory": "B"
+  },
+  {
+    "id": "DRUG-005", "genericName": "Metformin", "brandNames": ["Glucophage", "Glycomet", "Obimet"],
+    "drugClass": "Biguanides", "therapeuticCategory": "Antidiabetic",
+    "forms": ["tablet"],
+    "dosageRanges": {
+      "pediatric": { "mgPerKgPerDay": { "min": 10, "max": 25 }, "maxDailyDose": 2000, "frequency": "twice daily", "notes": "For children ≥10 years only" },
+      "adult": { "dosePerAdmin": { "min": 500, "max": 1000 }, "maxDailyDose": 2550, "frequency": "2-3 times daily" },
+      "geriatric": { "dosePerAdmin": { "min": 500, "max": 1000 }, "maxDailyDose": 2000, "frequency": "twice daily", "notes": "Adjust for renal function. Contraindicated if eGFR <30" }
+    },
+    "contraindications": ["Renal impairment (eGFR <30)", "Metabolic acidosis", "Hepatic impairment"],
+    "pregnancyCategory": "B"
+  },
+  {
+    "id": "DRUG-006", "genericName": "Warfarin", "brandNames": ["Coumadin", "Warf", "Acitrom"],
+    "drugClass": "Anticoagulants", "therapeuticCategory": "Blood Thinner",
+    "forms": ["tablet"],
+    "dosageRanges": {
+      "pediatric": { "mgPerKgPerDay": { "min": 0.05, "max": 0.34 }, "maxDailyDose": 10, "frequency": "once daily", "notes": "Dose adjusted by INR" },
+      "adult": { "dosePerAdmin": { "min": 2, "max": 10 }, "maxDailyDose": 15, "frequency": "once daily", "notes": "Individualized by INR target 2.0-3.0" },
+      "geriatric": { "dosePerAdmin": { "min": 1, "max": 5 }, "maxDailyDose": 10, "frequency": "once daily", "notes": "Lower starting dose, careful INR monitoring" }
+    },
+    "contraindications": ["Active bleeding", "Pregnancy", "Severe hepatic disease", "Recent surgery"],
+    "pregnancyCategory": "X"
+  },
+  {
+    "id": "DRUG-007", "genericName": "Lisinopril", "brandNames": ["Zestril", "Listril", "Prinivil"],
+    "drugClass": "ACE Inhibitors", "therapeuticCategory": "Antihypertensive",
+    "forms": ["tablet"],
+    "dosageRanges": {
+      "pediatric": { "mgPerKgPerDay": { "min": 0.07, "max": 0.6 }, "maxDailyDose": 40, "frequency": "once daily", "notes": "For children ≥6 years" },
+      "adult": { "dosePerAdmin": { "min": 5, "max": 40 }, "maxDailyDose": 80, "frequency": "once daily" },
+      "geriatric": { "dosePerAdmin": { "min": 2.5, "max": 20 }, "maxDailyDose": 40, "frequency": "once daily", "notes": "Start low, monitor renal function" }
+    },
+    "contraindications": ["Pregnancy", "Bilateral renal artery stenosis", "Angioedema history"],
+    "pregnancyCategory": "D"
+  },
+  {
+    "id": "DRUG-008", "genericName": "Atorvastatin", "brandNames": ["Lipitor", "Atorva", "Tonact"],
+    "drugClass": "Statins", "therapeuticCategory": "Cholesterol Lowering",
+    "forms": ["tablet"],
+    "dosageRanges": {
+      "pediatric": { "mgPerKgPerDay": { "min": 0, "max": 0 }, "maxDailyDose": 20, "frequency": "once daily", "notes": "10-17 years only, 10-20mg/day" },
+      "adult": { "dosePerAdmin": { "min": 10, "max": 80 }, "maxDailyDose": 80, "frequency": "once daily" },
+      "geriatric": { "dosePerAdmin": { "min": 10, "max": 40 }, "maxDailyDose": 40, "frequency": "once daily", "notes": "Monitor LFTs, especially with hepatic concerns" }
+    },
+    "contraindications": ["Active liver disease", "Pregnancy", "Breastfeeding"],
+    "pregnancyCategory": "X"
+  },
+  {
+    "id": "DRUG-009", "genericName": "Amlodipine", "brandNames": ["Norvasc", "Amlopress", "Amlip"],
+    "drugClass": "Calcium Channel Blockers", "therapeuticCategory": "Antihypertensive",
+    "forms": ["tablet"],
+    "dosageRanges": {
+      "pediatric": { "mgPerKgPerDay": { "min": 0.05, "max": 0.3 }, "maxDailyDose": 5, "frequency": "once daily", "notes": "For children 6-17 years" },
+      "adult": { "dosePerAdmin": { "min": 2.5, "max": 10 }, "maxDailyDose": 10, "frequency": "once daily" },
+      "geriatric": { "dosePerAdmin": { "min": 2.5, "max": 5 }, "maxDailyDose": 10, "frequency": "once daily", "notes": "Start with 2.5mg" }
+    },
+    "contraindications": ["Severe aortic stenosis", "Cardiogenic shock"],
+    "pregnancyCategory": "C"
+  },
+  {
+    "id": "DRUG-010", "genericName": "Phenytoin", "brandNames": ["Dilantin", "Eptoin", "Phenytek"],
+    "drugClass": "Anticonvulsants", "therapeuticCategory": "Antiepileptic",
+    "forms": ["tablet", "capsule", "suspension", "injection"],
+    "dosageRanges": {
+      "pediatric": { "mgPerKgPerDay": { "min": 4, "max": 8 }, "maxDailyDose": 300, "frequency": "2-3 times daily", "notes": "Therapeutic level 10-20 mcg/mL" },
+      "adult": { "dosePerAdmin": { "min": 100, "max": 200 }, "maxDailyDose": 600, "frequency": "2-3 times daily" },
+      "geriatric": { "dosePerAdmin": { "min": 100, "max": 150 }, "maxDailyDose": 400, "frequency": "2-3 times daily", "notes": "Monitor levels closely" }
+    },
+    "contraindications": ["Sinus bradycardia", "Heart block", "Adams-Stokes syndrome"],
+    "pregnancyCategory": "D"
+  },
+  {
+    "id": "DRUG-011", "genericName": "Prednisone", "brandNames": ["Deltasone", "Omnacortil", "Wysolone"],
+    "drugClass": "Corticosteroids", "therapeuticCategory": "Anti-inflammatory / Immunosuppressant",
+    "forms": ["tablet", "oral solution"],
+    "dosageRanges": {
+      "pediatric": { "mgPerKgPerDay": { "min": 0.5, "max": 2 }, "maxDailyDose": 60, "frequency": "once daily or divided", "notes": "Short courses preferred" },
+      "adult": { "dosePerAdmin": { "min": 5, "max": 60 }, "maxDailyDose": 80, "frequency": "once daily or divided" },
+      "geriatric": { "dosePerAdmin": { "min": 5, "max": 40 }, "maxDailyDose": 60, "frequency": "once daily", "notes": "Lowest effective dose, monitor blood glucose" }
+    },
+    "contraindications": ["Systemic fungal infections", "Live vaccines"],
+    "pregnancyCategory": "C"
+  },
+  {
+    "id": "DRUG-012", "genericName": "Prednisolone", "brandNames": ["Prelone", "Omnacortil", "Wysolone"],
+    "drugClass": "Corticosteroids", "therapeuticCategory": "Anti-inflammatory / Immunosuppressant",
+    "forms": ["tablet", "oral solution", "eye drops"],
+    "dosageRanges": {
+      "pediatric": { "mgPerKgPerDay": { "min": 0.5, "max": 2 }, "maxDailyDose": 60, "frequency": "once daily or divided" },
+      "adult": { "dosePerAdmin": { "min": 5, "max": 60 }, "maxDailyDose": 80, "frequency": "once daily or divided" },
+      "geriatric": { "dosePerAdmin": { "min": 5, "max": 40 }, "maxDailyDose": 60, "frequency": "once daily" }
+    },
+    "contraindications": ["Systemic fungal infections", "Herpes simplex keratitis"],
+    "pregnancyCategory": "C"
+  },
+  {
+    "id": "DRUG-013", "genericName": "Omeprazole", "brandNames": ["Prilosec", "Omez", "Losec"],
+    "drugClass": "Proton Pump Inhibitors", "therapeuticCategory": "Acid Reducer",
+    "forms": ["capsule", "tablet", "injection"],
+    "dosageRanges": {
+      "pediatric": { "mgPerKgPerDay": { "min": 0.7, "max": 3.3 }, "maxDailyDose": 40, "frequency": "once daily", "notes": "Weight-based: 5-10kg: 5mg, 10-20kg: 10mg, >20kg: 20mg" },
+      "adult": { "dosePerAdmin": { "min": 20, "max": 40 }, "maxDailyDose": 40, "frequency": "once daily" },
+      "geriatric": { "dosePerAdmin": { "min": 10, "max": 20 }, "maxDailyDose": 20, "frequency": "once daily" }
+    },
+    "contraindications": ["Rilpivirine use", "Nelfinavir use"],
+    "pregnancyCategory": "C"
+  },
+  {
+    "id": "DRUG-014", "genericName": "Pantoprazole", "brandNames": ["Protonix", "Pantocid", "Pan"],
+    "drugClass": "Proton Pump Inhibitors", "therapeuticCategory": "Acid Reducer",
+    "forms": ["tablet", "injection"],
+    "dosageRanges": {
+      "pediatric": { "mgPerKgPerDay": { "min": 0.5, "max": 1.2 }, "maxDailyDose": 40, "frequency": "once daily", "notes": "For children ≥5 years, 15-<40kg: 20mg, ≥40kg: 40mg" },
+      "adult": { "dosePerAdmin": { "min": 20, "max": 40 }, "maxDailyDose": 80, "frequency": "once or twice daily" },
+      "geriatric": { "dosePerAdmin": { "min": 20, "max": 40 }, "maxDailyDose": 40, "frequency": "once daily" }
+    },
+    "contraindications": ["Rilpivirine use"],
+    "pregnancyCategory": "B"
+  },
+  {
+    "id": "DRUG-015", "genericName": "Ciprofloxacin", "brandNames": ["Cipro", "Ciplox", "Cifran"],
+    "drugClass": "Fluoroquinolones", "therapeuticCategory": "Antibiotic",
+    "forms": ["tablet", "suspension", "injection", "eye drops"],
+    "dosageRanges": {
+      "pediatric": { "mgPerKgPerDay": { "min": 10, "max": 20 }, "maxDailyDose": 1000, "frequency": "twice daily", "notes": "Use only when no safer alternative. Risk of musculoskeletal effects." },
+      "adult": { "dosePerAdmin": { "min": 250, "max": 750 }, "maxDailyDose": 1500, "frequency": "twice daily" },
+      "geriatric": { "dosePerAdmin": { "min": 250, "max": 500 }, "maxDailyDose": 1000, "frequency": "twice daily", "notes": "Increased risk of tendon rupture, QT prolongation" }
+    },
+    "contraindications": ["Myasthenia gravis", "Concurrent tizanidine", "Children <18 (relative)"],
+    "pregnancyCategory": "C"
+  },
+  {
+    "id": "DRUG-016", "genericName": "Metoprolol", "brandNames": ["Lopressor", "Seloken", "Betaloc"],
+    "drugClass": "Beta-Blockers", "therapeuticCategory": "Antihypertensive / Antianginal",
+    "forms": ["tablet", "injection"],
+    "dosageRanges": {
+      "pediatric": { "mgPerKgPerDay": { "min": 1, "max": 6 }, "maxDailyDose": 200, "frequency": "twice daily" },
+      "adult": { "dosePerAdmin": { "min": 25, "max": 200 }, "maxDailyDose": 400, "frequency": "1-2 times daily" },
+      "geriatric": { "dosePerAdmin": { "min": 12.5, "max": 100 }, "maxDailyDose": 200, "frequency": "1-2 times daily", "notes": "Start low, titrate slowly" }
+    },
+    "contraindications": ["Severe bradycardia", "Heart block >1st degree", "Decompensated heart failure", "Asthma"],
+    "pregnancyCategory": "C"
+  },
+  {
+    "id": "DRUG-017", "genericName": "Losartan", "brandNames": ["Cozaar", "Losacar", "Repace"],
+    "drugClass": "ARBs", "therapeuticCategory": "Antihypertensive",
+    "forms": ["tablet"],
+    "dosageRanges": {
+      "pediatric": { "mgPerKgPerDay": { "min": 0.7, "max": 1.4 }, "maxDailyDose": 50, "frequency": "once daily", "notes": "For children ≥6 years" },
+      "adult": { "dosePerAdmin": { "min": 25, "max": 100 }, "maxDailyDose": 100, "frequency": "once daily" },
+      "geriatric": { "dosePerAdmin": { "min": 25, "max": 50 }, "maxDailyDose": 100, "frequency": "once daily" }
+    },
+    "contraindications": ["Pregnancy", "Bilateral renal artery stenosis"],
+    "pregnancyCategory": "D"
+  },
+  {
+    "id": "DRUG-018", "genericName": "Rosuvastatin", "brandNames": ["Crestor", "Rosuvas", "Rozavel"],
+    "drugClass": "Statins", "therapeuticCategory": "Cholesterol Lowering",
+    "forms": ["tablet"],
+    "dosageRanges": {
+      "pediatric": { "mgPerKgPerDay": { "min": 0, "max": 0 }, "maxDailyDose": 20, "frequency": "once daily", "notes": "For children 8-17 years, 5-20mg" },
+      "adult": { "dosePerAdmin": { "min": 5, "max": 40 }, "maxDailyDose": 40, "frequency": "once daily" },
+      "geriatric": { "dosePerAdmin": { "min": 5, "max": 20 }, "maxDailyDose": 20, "frequency": "once daily" }
+    },
+    "contraindications": ["Active liver disease", "Pregnancy", "Breastfeeding"],
+    "pregnancyCategory": "X"
+  },
+  {
+    "id": "DRUG-019", "genericName": "Clopidogrel", "brandNames": ["Plavix", "Clopilet", "Deplatt"],
+    "drugClass": "Antiplatelets", "therapeuticCategory": "Blood Thinner",
+    "forms": ["tablet"],
+    "dosageRanges": {
+      "pediatric": { "mgPerKgPerDay": { "min": 0, "max": 0 }, "maxDailyDose": 0, "frequency": "N/A", "notes": "Not typically used in pediatrics" },
+      "adult": { "dosePerAdmin": { "min": 75, "max": 75 }, "maxDailyDose": 75, "frequency": "once daily", "notes": "Loading dose 300-600mg" },
+      "geriatric": { "dosePerAdmin": { "min": 75, "max": 75 }, "maxDailyDose": 75, "frequency": "once daily" }
+    },
+    "contraindications": ["Active bleeding", "Severe hepatic impairment"],
+    "pregnancyCategory": "B"
+  },
+  {
+    "id": "DRUG-020", "genericName": "Diclofenac", "brandNames": ["Voltaren", "Voveran", "Dicloran"],
+    "drugClass": "NSAIDs", "therapeuticCategory": "Anti-inflammatory / Analgesic",
+    "forms": ["tablet", "gel", "injection", "suppository"],
+    "dosageRanges": {
+      "pediatric": { "mgPerKgPerDay": { "min": 1, "max": 3 }, "maxDailyDose": 150, "frequency": "2-3 times daily", "notes": "For children ≥1 year" },
+      "adult": { "dosePerAdmin": { "min": 25, "max": 75 }, "maxDailyDose": 150, "frequency": "2-3 times daily" },
+      "geriatric": { "dosePerAdmin": { "min": 25, "max": 50 }, "maxDailyDose": 100, "frequency": "2-3 times daily", "notes": "Use lowest effective dose, short duration" }
+    },
+    "contraindications": ["GI bleeding", "Severe renal impairment", "Heart failure", "NSAID allergy", "Third trimester pregnancy"],
+    "pregnancyCategory": "D"
+  },
+  {
+    "id": "DRUG-021", "genericName": "Cetirizine", "brandNames": ["Zyrtec", "Cetzine", "Alerid"],
+    "drugClass": "Antihistamines", "therapeuticCategory": "Antiallergic",
+    "forms": ["tablet", "syrup"],
+    "dosageRanges": {
+      "pediatric": { "mgPerKgPerDay": { "min": 0.125, "max": 0.25 }, "maxDailyDose": 10, "frequency": "once daily", "notes": "2-5yr: 2.5mg, 6-11yr: 5-10mg" },
+      "adult": { "dosePerAdmin": { "min": 5, "max": 10 }, "maxDailyDose": 10, "frequency": "once daily" },
+      "geriatric": { "dosePerAdmin": { "min": 5, "max": 5 }, "maxDailyDose": 5, "frequency": "once daily", "notes": "Start with lower dose" }
+    },
+    "contraindications": ["Severe renal impairment (without dose adjustment)"],
+    "pregnancyCategory": "B"
+  },
+  {
+    "id": "DRUG-022", "genericName": "Salbutamol", "brandNames": ["Ventolin", "Asthalin", "Proventil"],
+    "drugClass": "Bronchodilators", "therapeuticCategory": "Asthma / COPD",
+    "forms": ["inhaler", "nebulizer solution", "tablet", "syrup"],
+    "dosageRanges": {
+      "pediatric": { "mgPerKgPerDay": { "min": 0.1, "max": 0.3 }, "maxDailyDose": 8, "frequency": "3-4 times daily", "notes": "Inhaler: 1-2 puffs every 4-6 hours PRN" },
+      "adult": { "dosePerAdmin": { "min": 2, "max": 4 }, "maxDailyDose": 16, "frequency": "3-4 times daily" },
+      "geriatric": { "dosePerAdmin": { "min": 2, "max": 4 }, "maxDailyDose": 16, "frequency": "3-4 times daily" }
+    },
+    "contraindications": [],
+    "pregnancyCategory": "C"
+  },
+  {
+    "id": "DRUG-023", "genericName": "Theophylline", "brandNames": ["Theo-24", "Theolair", "Deriphyllin"],
+    "drugClass": "Bronchodilators", "therapeuticCategory": "Asthma / COPD",
+    "forms": ["tablet", "capsule", "syrup"],
+    "dosageRanges": {
+      "pediatric": { "mgPerKgPerDay": { "min": 10, "max": 16 }, "maxDailyDose": 400, "frequency": "every 6-8 hours", "notes": "Therapeutic level 5-15 mcg/mL" },
+      "adult": { "dosePerAdmin": { "min": 200, "max": 400 }, "maxDailyDose": 900, "frequency": "every 8-12 hours" },
+      "geriatric": { "dosePerAdmin": { "min": 100, "max": 200 }, "maxDailyDose": 400, "frequency": "every 8-12 hours", "notes": "Reduced clearance in elderly" }
+    },
+    "contraindications": ["Active peptic ulcer", "Seizure disorder (use with caution)", "Severe cardiac arrhythmias"],
+    "pregnancyCategory": "C"
+  },
+  {
+    "id": "DRUG-024", "genericName": "Codeine", "brandNames": ["Codeine Phosphate"],
+    "drugClass": "Opioids", "therapeuticCategory": "Analgesic / Antitussive",
+    "forms": ["tablet", "syrup"],
+    "dosageRanges": {
+      "pediatric": { "mgPerKgPerDay": { "min": 0, "max": 0 }, "maxDailyDose": 0, "frequency": "N/A", "notes": "CONTRAINDICATED in children <12 years. FDA Black Box Warning." },
+      "adult": { "dosePerAdmin": { "min": 15, "max": 60 }, "maxDailyDose": 360, "frequency": "every 4-6 hours" },
+      "geriatric": { "dosePerAdmin": { "min": 15, "max": 30 }, "maxDailyDose": 180, "frequency": "every 4-6 hours", "notes": "Reduce dose, monitor for respiratory depression" }
+    },
+    "contraindications": ["Children <12 years", "Post-tonsillectomy in children <18", "Respiratory depression", "Severe asthma"],
+    "pregnancyCategory": "C"
+  },
+  {
+    "id": "DRUG-025", "genericName": "Aspirin", "brandNames": ["Ecosprin", "Disprin", "Bayer Aspirin"],
+    "drugClass": "NSAIDs", "therapeuticCategory": "Antiplatelet / Analgesic",
+    "forms": ["tablet"],
+    "dosageRanges": {
+      "pediatric": { "mgPerKgPerDay": { "min": 0, "max": 0 }, "maxDailyDose": 0, "frequency": "N/A", "notes": "AVOID in children <16 - risk of Reye's syndrome" },
+      "adult": { "dosePerAdmin": { "min": 75, "max": 325 }, "maxDailyDose": 4000, "frequency": "once daily (antiplatelet) or every 4-6 hours (analgesic)" },
+      "geriatric": { "dosePerAdmin": { "min": 75, "max": 150 }, "maxDailyDose": 325, "frequency": "once daily" }
+    },
+    "contraindications": ["Bleeding disorders", "Peptic ulcer", "Aspirin-sensitive asthma", "Children with viral illness (Reye's)"],
+    "pregnancyCategory": "D"
+  },
+  {
+    "id": "DRUG-026", "genericName": "Cephalexin", "brandNames": ["Keflex", "Sporidex", "Ceff"],
+    "drugClass": "Cephalosporins", "therapeuticCategory": "Antibiotic",
+    "forms": ["capsule", "suspension"],
+    "dosageRanges": {
+      "pediatric": { "mgPerKgPerDay": { "min": 25, "max": 50 }, "maxDailyDose": 2000, "frequency": "every 6-8 hours" },
+      "adult": { "dosePerAdmin": { "min": 250, "max": 500 }, "maxDailyDose": 4000, "frequency": "every 6 hours" },
+      "geriatric": { "dosePerAdmin": { "min": 250, "max": 500 }, "maxDailyDose": 2000, "frequency": "every 6-8 hours" }
+    },
+    "contraindications": ["Cephalosporin allergy", "Severe Penicillin allergy (10% cross-reactivity)"],
+    "pregnancyCategory": "B"
+  },
+  {
+    "id": "DRUG-027", "genericName": "Doxycycline", "brandNames": ["Vibramycin", "Doxylab", "Doxybond"],
+    "drugClass": "Tetracyclines", "therapeuticCategory": "Antibiotic",
+    "forms": ["capsule", "tablet"],
+    "dosageRanges": {
+      "pediatric": { "mgPerKgPerDay": { "min": 2, "max": 5 }, "maxDailyDose": 200, "frequency": "1-2 times daily", "notes": "For children ≥8 years only. Risk of dental staining." },
+      "adult": { "dosePerAdmin": { "min": 100, "max": 200 }, "maxDailyDose": 200, "frequency": "once or twice daily" },
+      "geriatric": { "dosePerAdmin": { "min": 100, "max": 100 }, "maxDailyDose": 200, "frequency": "once or twice daily" }
+    },
+    "contraindications": ["Children <8 years", "Pregnancy", "Breastfeeding", "Severe hepatic impairment"],
+    "pregnancyCategory": "D"
+  },
+  {
+    "id": "DRUG-028", "genericName": "Furosemide", "brandNames": ["Lasix", "Fruselac", "Frusemide"],
+    "drugClass": "Loop Diuretics", "therapeuticCategory": "Diuretic",
+    "forms": ["tablet", "injection"],
+    "dosageRanges": {
+      "pediatric": { "mgPerKgPerDay": { "min": 1, "max": 6 }, "maxDailyDose": 80, "frequency": "1-2 times daily" },
+      "adult": { "dosePerAdmin": { "min": 20, "max": 80 }, "maxDailyDose": 600, "frequency": "1-2 times daily" },
+      "geriatric": { "dosePerAdmin": { "min": 20, "max": 40 }, "maxDailyDose": 200, "frequency": "once daily", "notes": "Monitor electrolytes closely" }
+    },
+    "contraindications": ["Anuria", "Severe electrolyte depletion", "Hepatic coma"],
+    "pregnancyCategory": "C"
+  },
+  {
+    "id": "DRUG-029", "genericName": "Tramadol", "brandNames": ["Ultram", "Tramazac", "Contramal"],
+    "drugClass": "Opioids", "therapeuticCategory": "Analgesic",
+    "forms": ["tablet", "capsule", "injection"],
+    "dosageRanges": {
+      "pediatric": { "mgPerKgPerDay": { "min": 0, "max": 0 }, "maxDailyDose": 0, "frequency": "N/A", "notes": "NOT recommended in children <12 years" },
+      "adult": { "dosePerAdmin": { "min": 50, "max": 100 }, "maxDailyDose": 400, "frequency": "every 4-6 hours" },
+      "geriatric": { "dosePerAdmin": { "min": 25, "max": 50 }, "maxDailyDose": 200, "frequency": "every 6 hours", "notes": "Start low, increased seizure risk" }
+    },
+    "contraindications": ["Seizure disorder", "MAO inhibitor use", "Severe respiratory depression", "Children <12 years"],
+    "pregnancyCategory": "C"
+  },
+  {
+    "id": "DRUG-030", "genericName": "Gabapentin", "brandNames": ["Neurontin", "Gabapin", "Gabantin"],
+    "drugClass": "Anticonvulsants", "therapeuticCategory": "Antiepileptic / Neuropathic Pain",
+    "forms": ["capsule", "tablet"],
+    "dosageRanges": {
+      "pediatric": { "mgPerKgPerDay": { "min": 10, "max": 40 }, "maxDailyDose": 1200, "frequency": "3 times daily", "notes": "For children ≥3 years" },
+      "adult": { "dosePerAdmin": { "min": 300, "max": 800 }, "maxDailyDose": 3600, "frequency": "3 times daily" },
+      "geriatric": { "dosePerAdmin": { "min": 100, "max": 300 }, "maxDailyDose": 1800, "frequency": "3 times daily", "notes": "Adjust for renal function" }
+    },
+    "contraindications": [],
+    "pregnancyCategory": "C"
+  },
+  {
+    "id": "DRUG-031", "genericName": "Levofloxacin", "brandNames": ["Levaquin", "Levoflox", "Tavanic"],
+    "drugClass": "Fluoroquinolones", "therapeuticCategory": "Antibiotic",
+    "forms": ["tablet", "injection"],
+    "dosageRanges": {
+      "pediatric": { "mgPerKgPerDay": { "min": 8, "max": 10 }, "maxDailyDose": 500, "frequency": "once daily", "notes": "Generally avoided in children" },
+      "adult": { "dosePerAdmin": { "min": 250, "max": 750 }, "maxDailyDose": 750, "frequency": "once daily" },
+      "geriatric": { "dosePerAdmin": { "min": 250, "max": 500 }, "maxDailyDose": 500, "frequency": "once daily", "notes": "Adjust for renal function. Tendon rupture risk." }
+    },
+    "contraindications": ["Myasthenia gravis", "QT prolongation", "Tendon disorder history"],
+    "pregnancyCategory": "C"
+  },
+  {
+    "id": "DRUG-032", "genericName": "Metronidazole", "brandNames": ["Flagyl", "Metrogyl", "Aristogyl"],
+    "drugClass": "Nitroimidazoles", "therapeuticCategory": "Antibiotic / Antiprotozoal",
+    "forms": ["tablet", "injection", "gel"],
+    "dosageRanges": {
+      "pediatric": { "mgPerKgPerDay": { "min": 15, "max": 35 }, "maxDailyDose": 1500, "frequency": "every 8 hours" },
+      "adult": { "dosePerAdmin": { "min": 250, "max": 500 }, "maxDailyDose": 2000, "frequency": "every 8 hours" },
+      "geriatric": { "dosePerAdmin": { "min": 250, "max": 500 }, "maxDailyDose": 1500, "frequency": "every 8 hours" }
+    },
+    "contraindications": ["First trimester pregnancy", "Concurrent alcohol", "Concurrent disulfiram"],
+    "pregnancyCategory": "B"
+  },
+  {
+    "id": "DRUG-033", "genericName": "Clindamycin", "brandNames": ["Cleocin", "Dalacin", "Clindac"],
+    "drugClass": "Lincosamides", "therapeuticCategory": "Antibiotic",
+    "forms": ["capsule", "injection", "gel"],
+    "dosageRanges": {
+      "pediatric": { "mgPerKgPerDay": { "min": 8, "max": 25 }, "maxDailyDose": 1800, "frequency": "3-4 times daily" },
+      "adult": { "dosePerAdmin": { "min": 150, "max": 450 }, "maxDailyDose": 1800, "frequency": "every 6 hours" },
+      "geriatric": { "dosePerAdmin": { "min": 150, "max": 300 }, "maxDailyDose": 1200, "frequency": "every 6-8 hours" }
+    },
+    "contraindications": ["History of C. difficile colitis", "Regional enteritis"],
+    "pregnancyCategory": "B"
+  },
+  {
+    "id": "DRUG-034", "genericName": "Ranitidine", "brandNames": ["Zantac", "Rantac", "Aciloc"],
+    "drugClass": "H2 Blockers", "therapeuticCategory": "Acid Reducer",
+    "forms": ["tablet", "syrup", "injection"],
+    "dosageRanges": {
+      "pediatric": { "mgPerKgPerDay": { "min": 2, "max": 4 }, "maxDailyDose": 150, "frequency": "twice daily" },
+      "adult": { "dosePerAdmin": { "min": 150, "max": 300 }, "maxDailyDose": 600, "frequency": "twice daily" },
+      "geriatric": { "dosePerAdmin": { "min": 150, "max": 150 }, "maxDailyDose": 300, "frequency": "twice daily" }
+    },
+    "contraindications": ["Porphyria"],
+    "pregnancyCategory": "B"
+  },
+  {
+    "id": "DRUG-035", "genericName": "Ondansetron", "brandNames": ["Zofran", "Emeset", "Ondem"],
+    "drugClass": "Antiemetics", "therapeuticCategory": "Anti-nausea",
+    "forms": ["tablet", "injection", "ODT"],
+    "dosageRanges": {
+      "pediatric": { "mgPerKgPerDay": { "min": 0.1, "max": 0.15 }, "maxDailyDose": 16, "frequency": "every 8 hours", "notes": "Single dose max 4mg for children <12" },
+      "adult": { "dosePerAdmin": { "min": 4, "max": 8 }, "maxDailyDose": 24, "frequency": "every 8 hours" },
+      "geriatric": { "dosePerAdmin": { "min": 4, "max": 8 }, "maxDailyDose": 16, "frequency": "every 8-12 hours" }
+    },
+    "contraindications": ["QT prolongation", "Concurrent apomorphine"],
+    "pregnancyCategory": "B"
+  },
+  {
+    "id": "DRUG-036", "genericName": "Hydrochlorothiazide", "brandNames": ["Microzide", "Aquazide", "Esidrex"],
+    "drugClass": "Thiazide Diuretics", "therapeuticCategory": "Diuretic / Antihypertensive",
+    "forms": ["tablet"],
+    "dosageRanges": {
+      "pediatric": { "mgPerKgPerDay": { "min": 1, "max": 3 }, "maxDailyDose": 37.5, "frequency": "once daily" },
+      "adult": { "dosePerAdmin": { "min": 12.5, "max": 50 }, "maxDailyDose": 50, "frequency": "once daily" },
+      "geriatric": { "dosePerAdmin": { "min": 12.5, "max": 25 }, "maxDailyDose": 25, "frequency": "once daily" }
+    },
+    "contraindications": ["Anuria", "Sulfonamide allergy"],
+    "pregnancyCategory": "B"
+  },
+  {
+    "id": "DRUG-037", "genericName": "Glimepiride", "brandNames": ["Amaryl", "Glimestar", "Glimy"],
+    "drugClass": "Sulfonylureas", "therapeuticCategory": "Antidiabetic",
+    "forms": ["tablet"],
+    "dosageRanges": {
+      "pediatric": { "mgPerKgPerDay": { "min": 0, "max": 0 }, "maxDailyDose": 0, "frequency": "N/A", "notes": "Not approved for pediatric use" },
+      "adult": { "dosePerAdmin": { "min": 1, "max": 4 }, "maxDailyDose": 8, "frequency": "once daily" },
+      "geriatric": { "dosePerAdmin": { "min": 1, "max": 2 }, "maxDailyDose": 4, "frequency": "once daily", "notes": "Start with 1mg, hypoglycemia risk" }
+    },
+    "contraindications": ["Type 1 diabetes", "Diabetic ketoacidosis", "Severe hepatic impairment"],
+    "pregnancyCategory": "C"
+  },
+  {
+    "id": "DRUG-038", "genericName": "Insulin Glargine", "brandNames": ["Lantus", "Basalog", "Toujeo"],
+    "drugClass": "Insulins", "therapeuticCategory": "Antidiabetic",
+    "forms": ["injection"],
+    "dosageRanges": {
+      "pediatric": { "mgPerKgPerDay": { "min": 0, "max": 0 }, "maxDailyDose": 0, "frequency": "once daily", "notes": "0.2-0.5 units/kg/day initially. Individualized." },
+      "adult": { "dosePerAdmin": { "min": 10, "max": 80 }, "maxDailyDose": 80, "frequency": "once daily", "notes": "Units, not mg. Highly individualized by blood glucose." },
+      "geriatric": { "dosePerAdmin": { "min": 10, "max": 40 }, "maxDailyDose": 40, "frequency": "once daily", "notes": "Start conservative, hypoglycemia risk" }
+    },
+    "contraindications": ["Hypoglycemia"],
+    "pregnancyCategory": "B"
+  },
+  {
+    "id": "DRUG-039", "genericName": "Montelukast", "brandNames": ["Singulair", "Montair", "Montek"],
+    "drugClass": "Leukotriene Inhibitors", "therapeuticCategory": "Asthma / Allergy",
+    "forms": ["tablet", "chewable tablet", "granules"],
+    "dosageRanges": {
+      "pediatric": { "mgPerKgPerDay": { "min": 0, "max": 0 }, "maxDailyDose": 5, "frequency": "once daily at bedtime", "notes": "2-5yr: 4mg, 6-14yr: 5mg" },
+      "adult": { "dosePerAdmin": { "min": 10, "max": 10 }, "maxDailyDose": 10, "frequency": "once daily at bedtime" },
+      "geriatric": { "dosePerAdmin": { "min": 10, "max": 10 }, "maxDailyDose": 10, "frequency": "once daily at bedtime" }
+    },
+    "contraindications": ["Phenylketonuria (chewable contains phenylalanine)"],
+    "pregnancyCategory": "B"
+  },
+  {
+    "id": "DRUG-040", "genericName": "Sertraline", "brandNames": ["Zoloft", "Serlift", "Daxid"],
+    "drugClass": "SSRIs", "therapeuticCategory": "Antidepressant",
+    "forms": ["tablet"],
+    "dosageRanges": {
+      "pediatric": { "mgPerKgPerDay": { "min": 0, "max": 0 }, "maxDailyDose": 200, "frequency": "once daily", "notes": "6-12yr: start 25mg, 13-17yr: start 50mg" },
+      "adult": { "dosePerAdmin": { "min": 25, "max": 200 }, "maxDailyDose": 200, "frequency": "once daily" },
+      "geriatric": { "dosePerAdmin": { "min": 25, "max": 100 }, "maxDailyDose": 200, "frequency": "once daily", "notes": "Start low, titrate slowly" }
+    },
+    "contraindications": ["MAO inhibitor use (within 14 days)", "Concurrent pimozide", "Concurrent disulfiram (liquid form)"],
+    "pregnancyCategory": "C"
+  },
+  {
+    "id": "DRUG-041", "genericName": "Fluoxetine", "brandNames": ["Prozac", "Fludac", "Flunil"],
+    "drugClass": "SSRIs", "therapeuticCategory": "Antidepressant",
+    "forms": ["capsule", "tablet", "oral solution"],
+    "dosageRanges": {
+      "pediatric": { "mgPerKgPerDay": { "min": 0, "max": 0 }, "maxDailyDose": 20, "frequency": "once daily", "notes": "For children ≥8 years, start 10mg" },
+      "adult": { "dosePerAdmin": { "min": 20, "max": 80 }, "maxDailyDose": 80, "frequency": "once daily" },
+      "geriatric": { "dosePerAdmin": { "min": 10, "max": 40 }, "maxDailyDose": 60, "frequency": "once daily" }
+    },
+    "contraindications": ["MAO inhibitor use", "Concurrent thioridazine", "Concurrent pimozide"],
+    "pregnancyCategory": "C"
+  },
+  {
+    "id": "DRUG-042", "genericName": "Naproxen", "brandNames": ["Aleve", "Naprosyn", "Xenobid"],
+    "drugClass": "NSAIDs", "therapeuticCategory": "Anti-inflammatory / Analgesic",
+    "forms": ["tablet"],
+    "dosageRanges": {
+      "pediatric": { "mgPerKgPerDay": { "min": 5, "max": 7 }, "maxDailyDose": 500, "frequency": "twice daily", "notes": "For children ≥2 years" },
+      "adult": { "dosePerAdmin": { "min": 250, "max": 500 }, "maxDailyDose": 1250, "frequency": "twice daily" },
+      "geriatric": { "dosePerAdmin": { "min": 250, "max": 250 }, "maxDailyDose": 500, "frequency": "twice daily" }
+    },
+    "contraindications": ["GI bleeding", "Severe renal impairment", "NSAID allergy", "Third trimester pregnancy"],
+    "pregnancyCategory": "C"
+  },
+  {
+    "id": "DRUG-043", "genericName": "Erythromycin", "brandNames": ["Erythrocin", "E-Mycin", "Althrocin"],
+    "drugClass": "Macrolides", "therapeuticCategory": "Antibiotic",
+    "forms": ["tablet", "suspension", "ointment"],
+    "dosageRanges": {
+      "pediatric": { "mgPerKgPerDay": { "min": 30, "max": 50 }, "maxDailyDose": 2000, "frequency": "every 6 hours" },
+      "adult": { "dosePerAdmin": { "min": 250, "max": 500 }, "maxDailyDose": 4000, "frequency": "every 6 hours" },
+      "geriatric": { "dosePerAdmin": { "min": 250, "max": 500 }, "maxDailyDose": 2000, "frequency": "every 6 hours" }
+    },
+    "contraindications": ["Macrolide allergy", "Concurrent ergotamine", "QT prolongation"],
+    "pregnancyCategory": "B"
+  },
+  {
+    "id": "DRUG-044", "genericName": "Clarithromycin", "brandNames": ["Biaxin", "Claribid", "Klaricid"],
+    "drugClass": "Macrolides", "therapeuticCategory": "Antibiotic",
+    "forms": ["tablet", "suspension"],
+    "dosageRanges": {
+      "pediatric": { "mgPerKgPerDay": { "min": 7.5, "max": 15 }, "maxDailyDose": 1000, "frequency": "twice daily" },
+      "adult": { "dosePerAdmin": { "min": 250, "max": 500 }, "maxDailyDose": 1000, "frequency": "twice daily" },
+      "geriatric": { "dosePerAdmin": { "min": 250, "max": 500 }, "maxDailyDose": 1000, "frequency": "twice daily", "notes": "Adjust for renal function" }
+    },
+    "contraindications": ["Macrolide allergy", "QT prolongation", "Concurrent colchicine in renal/hepatic impairment"],
+    "pregnancyCategory": "C"
+  },
+  {
+    "id": "DRUG-045", "genericName": "Hydroxyzine", "brandNames": ["Atarax", "Vistaril"],
+    "drugClass": "Antihistamines", "therapeuticCategory": "Antiallergic / Anxiolytic",
+    "forms": ["tablet", "syrup"],
+    "dosageRanges": {
+      "pediatric": { "mgPerKgPerDay": { "min": 1, "max": 2 }, "maxDailyDose": 50, "frequency": "3-4 times daily" },
+      "adult": { "dosePerAdmin": { "min": 25, "max": 100 }, "maxDailyDose": 400, "frequency": "3-4 times daily" },
+      "geriatric": { "dosePerAdmin": { "min": 10, "max": 25 }, "maxDailyDose": 100, "frequency": "2-3 times daily", "notes": "Increased sedation risk" }
+    },
+    "contraindications": ["Early pregnancy", "QT prolongation"],
+    "pregnancyCategory": "C"
+  },
+  {
+    "id": "DRUG-046", "genericName": "Hydralazine", "brandNames": ["Apresoline"],
+    "drugClass": "Vasodilators", "therapeuticCategory": "Antihypertensive",
+    "forms": ["tablet", "injection"],
+    "dosageRanges": {
+      "pediatric": { "mgPerKgPerDay": { "min": 0.75, "max": 3 }, "maxDailyDose": 200, "frequency": "every 6-8 hours" },
+      "adult": { "dosePerAdmin": { "min": 10, "max": 50 }, "maxDailyDose": 300, "frequency": "every 6-8 hours" },
+      "geriatric": { "dosePerAdmin": { "min": 10, "max": 25 }, "maxDailyDose": 100, "frequency": "every 6-8 hours" }
+    },
+    "contraindications": ["Coronary artery disease", "Mitral valve disease", "SLE"],
+    "pregnancyCategory": "C"
+  },
+  {
+    "id": "DRUG-047", "genericName": "Spironolactone", "brandNames": ["Aldactone", "Spiromide"],
+    "drugClass": "Potassium-Sparing Diuretics", "therapeuticCategory": "Diuretic",
+    "forms": ["tablet"],
+    "dosageRanges": {
+      "pediatric": { "mgPerKgPerDay": { "min": 1, "max": 3 }, "maxDailyDose": 100, "frequency": "1-2 times daily" },
+      "adult": { "dosePerAdmin": { "min": 25, "max": 100 }, "maxDailyDose": 400, "frequency": "1-2 times daily" },
+      "geriatric": { "dosePerAdmin": { "min": 12.5, "max": 50 }, "maxDailyDose": 100, "frequency": "once daily", "notes": "Monitor potassium closely" }
+    },
+    "contraindications": ["Hyperkalemia", "Severe renal impairment", "Addison's disease"],
+    "pregnancyCategory": "C"
+  },
+  {
+    "id": "DRUG-048", "genericName": "Digoxin", "brandNames": ["Lanoxin", "Digitek"],
+    "drugClass": "Cardiac Glycosides", "therapeuticCategory": "Cardiac",
+    "forms": ["tablet", "injection", "elixir"],
+    "dosageRanges": {
+      "pediatric": { "mgPerKgPerDay": { "min": 0.005, "max": 0.012 }, "maxDailyDose": 0.5, "frequency": "1-2 times daily", "notes": "Narrow therapeutic index. Level 0.8-2.0 ng/mL" },
+      "adult": { "dosePerAdmin": { "min": 0.125, "max": 0.25 }, "maxDailyDose": 0.5, "frequency": "once daily" },
+      "geriatric": { "dosePerAdmin": { "min": 0.0625, "max": 0.125 }, "maxDailyDose": 0.25, "frequency": "once daily", "notes": "Reduce dose, monitor levels and renal function" }
+    },
+    "contraindications": ["Ventricular fibrillation", "Hypertrophic cardiomyopathy"],
+    "pregnancyCategory": "C"
+  },
+  {
+    "id": "DRUG-049", "genericName": "Carbamazepine", "brandNames": ["Tegretol", "Zen Retard", "Mazetol"],
+    "drugClass": "Anticonvulsants", "therapeuticCategory": "Antiepileptic",
+    "forms": ["tablet", "suspension", "CR tablet"],
+    "dosageRanges": {
+      "pediatric": { "mgPerKgPerDay": { "min": 10, "max": 20 }, "maxDailyDose": 1000, "frequency": "twice daily", "notes": "Therapeutic level 4-12 mcg/mL" },
+      "adult": { "dosePerAdmin": { "min": 200, "max": 400 }, "maxDailyDose": 1600, "frequency": "twice daily" },
+      "geriatric": { "dosePerAdmin": { "min": 100, "max": 200 }, "maxDailyDose": 800, "frequency": "twice daily" }
+    },
+    "contraindications": ["Bone marrow depression", "MAO inhibitor use", "Concurrent nefazodone"],
+    "pregnancyCategory": "D"
+  },
+  {
+    "id": "DRUG-050", "genericName": "Valproic Acid", "brandNames": ["Depakene", "Valparin", "Epilim"],
+    "drugClass": "Anticonvulsants", "therapeuticCategory": "Antiepileptic",
+    "forms": ["tablet", "syrup", "injection"],
+    "dosageRanges": {
+      "pediatric": { "mgPerKgPerDay": { "min": 15, "max": 45 }, "maxDailyDose": 2000, "frequency": "2-3 times daily", "notes": "Therapeutic level 50-100 mcg/mL" },
+      "adult": { "dosePerAdmin": { "min": 250, "max": 500 }, "maxDailyDose": 3000, "frequency": "2-3 times daily" },
+      "geriatric": { "dosePerAdmin": { "min": 250, "max": 500 }, "maxDailyDose": 2000, "frequency": "2-3 times daily" }
+    },
+    "contraindications": ["Hepatic disease", "Urea cycle disorders", "Pregnancy (teratogenic)"],
+    "pregnancyCategory": "X"
+  },
+  {
+    "id": "DRUG-051", "genericName": "Ampicillin", "brandNames": ["Principen", "Ampicyn"],
+    "drugClass": "Penicillins", "therapeuticCategory": "Antibiotic",
+    "forms": ["capsule", "injection"],
+    "dosageRanges": {
+      "pediatric": { "mgPerKgPerDay": { "min": 50, "max": 100 }, "maxDailyDose": 2000, "frequency": "every 6 hours" },
+      "adult": { "dosePerAdmin": { "min": 250, "max": 500 }, "maxDailyDose": 4000, "frequency": "every 6 hours" },
+      "geriatric": { "dosePerAdmin": { "min": 250, "max": 500 }, "maxDailyDose": 2000, "frequency": "every 6 hours" }
+    },
+    "contraindications": ["Penicillin allergy"],
+    "pregnancyCategory": "B"
+  },
+  {
+    "id": "DRUG-052", "genericName": "Penicillin V", "brandNames": ["Pen-Vee K", "Kaypen"],
+    "drugClass": "Penicillins", "therapeuticCategory": "Antibiotic",
+    "forms": ["tablet", "suspension"],
+    "dosageRanges": {
+      "pediatric": { "mgPerKgPerDay": { "min": 25, "max": 50 }, "maxDailyDose": 2000, "frequency": "every 6-8 hours" },
+      "adult": { "dosePerAdmin": { "min": 250, "max": 500 }, "maxDailyDose": 2000, "frequency": "every 6-8 hours" },
+      "geriatric": { "dosePerAdmin": { "min": 250, "max": 500 }, "maxDailyDose": 2000, "frequency": "every 6-8 hours" }
+    },
+    "contraindications": ["Penicillin allergy"],
+    "pregnancyCategory": "B"
+  },
+  {
+    "id": "DRUG-053", "genericName": "Enalapril", "brandNames": ["Vasotec", "Envas"],
+    "drugClass": "ACE Inhibitors", "therapeuticCategory": "Antihypertensive",
+    "forms": ["tablet"],
+    "dosageRanges": {
+      "pediatric": { "mgPerKgPerDay": { "min": 0.08, "max": 0.6 }, "maxDailyDose": 40, "frequency": "1-2 times daily" },
+      "adult": { "dosePerAdmin": { "min": 5, "max": 20 }, "maxDailyDose": 40, "frequency": "1-2 times daily" },
+      "geriatric": { "dosePerAdmin": { "min": 2.5, "max": 10 }, "maxDailyDose": 20, "frequency": "1-2 times daily" }
+    },
+    "contraindications": ["Pregnancy", "Bilateral renal artery stenosis", "Angioedema history"],
+    "pregnancyCategory": "D"
+  },
+  {
+    "id": "DRUG-054", "genericName": "Propranolol", "brandNames": ["Inderal", "Ciplar"],
+    "drugClass": "Beta-Blockers", "therapeuticCategory": "Antihypertensive / Antianginal",
+    "forms": ["tablet"],
+    "dosageRanges": {
+      "pediatric": { "mgPerKgPerDay": { "min": 1, "max": 4 }, "maxDailyDose": 160, "frequency": "2-3 times daily" },
+      "adult": { "dosePerAdmin": { "min": 20, "max": 80 }, "maxDailyDose": 320, "frequency": "2-3 times daily" },
+      "geriatric": { "dosePerAdmin": { "min": 10, "max": 40 }, "maxDailyDose": 160, "frequency": "2-3 times daily" }
+    },
+    "contraindications": ["Asthma", "Severe bradycardia", "Heart block", "Decompensated heart failure"],
+    "pregnancyCategory": "C"
+  },
+  {
+    "id": "DRUG-055", "genericName": "Simvastatin", "brandNames": ["Zocor", "Simvotin"],
+    "drugClass": "Statins", "therapeuticCategory": "Cholesterol Lowering",
+    "forms": ["tablet"],
+    "dosageRanges": {
+      "pediatric": { "mgPerKgPerDay": { "min": 0, "max": 0 }, "maxDailyDose": 40, "frequency": "once daily at bedtime", "notes": "For children 10-17 years" },
+      "adult": { "dosePerAdmin": { "min": 10, "max": 40 }, "maxDailyDose": 40, "frequency": "once daily at bedtime" },
+      "geriatric": { "dosePerAdmin": { "min": 5, "max": 20 }, "maxDailyDose": 20, "frequency": "once daily at bedtime" }
+    },
+    "contraindications": ["Active liver disease", "Pregnancy", "Concurrent strong CYP3A4 inhibitors"],
+    "pregnancyCategory": "X"
+  },
+  {
+    "id": "DRUG-056", "genericName": "Cefixime", "brandNames": ["Suprax", "Taxim-O", "Zifi"],
+    "drugClass": "Cephalosporins", "therapeuticCategory": "Antibiotic",
+    "forms": ["tablet", "suspension"],
+    "dosageRanges": {
+      "pediatric": { "mgPerKgPerDay": { "min": 8, "max": 8 }, "maxDailyDose": 400, "frequency": "once daily or twice daily" },
+      "adult": { "dosePerAdmin": { "min": 200, "max": 400 }, "maxDailyDose": 400, "frequency": "once daily" },
+      "geriatric": { "dosePerAdmin": { "min": 200, "max": 400 }, "maxDailyDose": 400, "frequency": "once daily" }
+    },
+    "contraindications": ["Cephalosporin allergy"],
+    "pregnancyCategory": "B"
+  },
+  {
+    "id": "DRUG-057", "genericName": "Domperidone", "brandNames": ["Motilium", "Domstal", "Vomistop"],
+    "drugClass": "Antiemetics", "therapeuticCategory": "Anti-nausea / Prokinetic",
+    "forms": ["tablet", "suspension"],
+    "dosageRanges": {
+      "pediatric": { "mgPerKgPerDay": { "min": 0.25, "max": 0.5 }, "maxDailyDose": 30, "frequency": "3 times daily" },
+      "adult": { "dosePerAdmin": { "min": 10, "max": 20 }, "maxDailyDose": 30, "frequency": "3 times daily" },
+      "geriatric": { "dosePerAdmin": { "min": 10, "max": 10 }, "maxDailyDose": 30, "frequency": "3 times daily" }
+    },
+    "contraindications": ["Prolactinoma", "GI hemorrhage", "QT prolongation"],
+    "pregnancyCategory": "C"
+  },
+  {
+    "id": "DRUG-058", "genericName": "Chlorpheniramine", "brandNames": ["Chlor-Trimeton", "Piriton", "Avil"],
+    "drugClass": "Antihistamines", "therapeuticCategory": "Antiallergic",
+    "forms": ["tablet", "syrup"],
+    "dosageRanges": {
+      "pediatric": { "mgPerKgPerDay": { "min": 0.15, "max": 0.35 }, "maxDailyDose": 12, "frequency": "every 4-6 hours", "notes": "2-5yr: 1mg, 6-11yr: 2mg per dose" },
+      "adult": { "dosePerAdmin": { "min": 4, "max": 4 }, "maxDailyDose": 24, "frequency": "every 4-6 hours" },
+      "geriatric": { "dosePerAdmin": { "min": 2, "max": 4 }, "maxDailyDose": 12, "frequency": "every 6-8 hours", "notes": "Increased anticholinergic effects" }
+    },
+    "contraindications": ["Narrow-angle glaucoma", "Urinary retention", "MAO inhibitor use"],
+    "pregnancyCategory": "B"
+  },
+  {
+    "id": "DRUG-059", "genericName": "Levothyroxine", "brandNames": ["Synthroid", "Thyronorm", "Eltroxin"],
+    "drugClass": "Thyroid Hormones", "therapeuticCategory": "Thyroid Replacement",
+    "forms": ["tablet"],
+    "dosageRanges": {
+      "pediatric": { "mgPerKgPerDay": { "min": 0, "max": 0 }, "maxDailyDose": 0.3, "frequency": "once daily", "notes": "Dose varies widely by age: neonates 10-15mcg/kg, children 4-5mcg/kg" },
+      "adult": { "dosePerAdmin": { "min": 0.05, "max": 0.2 }, "maxDailyDose": 0.3, "frequency": "once daily", "notes": "Start 25-50mcg, titrate by TSH" },
+      "geriatric": { "dosePerAdmin": { "min": 0.025, "max": 0.1 }, "maxDailyDose": 0.2, "frequency": "once daily", "notes": "Start 12.5-25mcg, increase slowly" }
+    },
+    "contraindications": ["Uncorrected adrenal insufficiency", "Acute MI"],
+    "pregnancyCategory": "A"
+  },
+  {
+    "id": "DRUG-060", "genericName": "Folic Acid", "brandNames": ["Folvite", "Folart"],
+    "drugClass": "Vitamins", "therapeuticCategory": "Supplement",
+    "forms": ["tablet"],
+    "dosageRanges": {
+      "pediatric": { "mgPerKgPerDay": { "min": 0, "max": 0 }, "maxDailyDose": 1, "frequency": "once daily", "notes": "Infants 0.1mg, children 0.3-1mg" },
+      "adult": { "dosePerAdmin": { "min": 0.4, "max": 5 }, "maxDailyDose": 5, "frequency": "once daily" },
+      "geriatric": { "dosePerAdmin": { "min": 0.4, "max": 5 }, "maxDailyDose": 5, "frequency": "once daily" }
+    },
+    "contraindications": [],
+    "pregnancyCategory": "A"
+  }
+]
